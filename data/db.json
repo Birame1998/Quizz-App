@@ -1,0 +1,20 @@
+{
+"users":[
+    {
+        "nom":"Diallo",
+        "prenom":"El Hadj Ibrahima",
+        "login":"dialloe1999@gmail.com",
+        "password":"diallo",
+        "role":"ROLE_JOUEUR",
+        "score":30
+    },
+    {
+        "nom":"Diouf",
+        "prenom":"Birame Moussa",
+        "login":"biramemoussadiouf@gmail.com",
+        "password":"diouf",
+        "role":"ROLE_ADMIN",
+        "score":0
+    }
+]
+}
