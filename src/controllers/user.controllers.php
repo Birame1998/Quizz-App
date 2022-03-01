@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"]=="POST") {
     if (isset($_REQUEST['action'])) {
-        if ($_REQUEST['action']=="connexion") {
+        if ($_REQUEST['action']=="accueil") {
             
         }
     }
@@ -9,8 +9,8 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
 
 if ($_SERVER["REQUEST_METHOD"]=="GET") {
     if (isset($_REQUEST['action'])) {
-        if ($_REQUEST['action']=="connexion") {
-            
+        if ($_REQUEST['action']=="accueil") {
+            require_once(PATH_VIEWS.DIRECTORY_SEPARATOR."user".DIRECTORY_SEPARATOR."accueil.html.php");
         }
     }
 }

@@ -9,3 +9,6 @@ define("PATH_VIEWS",ROOT."templates".DIRECTORY_SEPARATOR);
 define("PATH_DB",ROOT."data".DIRECTORY_SEPARATOR."db.json");
 
 define("WEB_ROOT","http://localhost/");
+
+define("KEY_ERRORS","errors");
+define("KEY_USER_CONNECT",'user-connect');
