@@ -9,17 +9,24 @@
 </head>
 <body>
     <div class="header">
+        <div class="logo"></div>
         <h1>Le plaisir de jouer</h1>
     </div>
     <div class="main">   
         <div class="form-contain">
             <div class="header-form">
-                <h2>Login form</h2>
+                <p>Login form</p>
             </div>
         <form action="" method="POST">
-            <div class="connect-params">
-            <input type="text" name="login" placeholder="login"><br>
-            <input type="text" name="password" placeholder="password">
+            <div class="connect-params">    
+            <div class="login">
+            <input type="email" name="login" placeholder="Login">
+            <img src="<?=WEB_ROOT.DIRECTORY_SEPARATOR."img".DIRECTORY_SEPARATOR."ic-login.png" ?>" alt="" width="5%" height="1%">
+            </div>
+            <div class="password">
+            <input type="password" name="password" placeholder="Password">
+            <img src="<?=WEB_ROOT.DIRECTORY_SEPARATOR."img".DIRECTORY_SEPARATOR."ic-password.png" ?>" alt="" width="5%" height="1%">
+            </div>
             </div>
             <div class="connect">
                 <input type="submit" value="Connexion" id="connexion">

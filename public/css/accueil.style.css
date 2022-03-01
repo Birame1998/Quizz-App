@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+}
+.header{
+    flex: 1;
+    /* border: solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(81,191,208);
+    color: white;
+
+}
+.big-title{
+    flex: 9;
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 20px;
+}
+.deconnexion{
+    flex: 1;
+
+}
+input[value="Déconnexion"]{
+    padding: 1vh;
+    width: 8vw;
+    margin-top: 3vh;
+    background-color: rgb(57,221,214);
+    border-color: rgb(57,221,214);
+    color: white;
+    font-size: 1rem;
+}
+.main{
+    flex: 9;
+    border: solid;
+    display: flex;
+    flex-direction: row;
+}
+.taches-admin{
+    margin-top: 5vh;
+    flex:3;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+
+}
+.avatar{
+    flex:3;
+    background-image: linear-gradient(210deg,white 20%,rgb(93,195,210) 80%);
+}
+label{
+color: gray;
+font-size: 1.3rem;
+}
+.taches{
+    flex: 7;
+    margin-top: 5vh;
+}
+.liste-question{
+    height: 5vh;
+}
+.creer-admin{
+    height: 5vh;
+}
+.liste-joueurs{
+    height: 5vh;
+}
+.creer-questions{
+    height: 5vh;
+}
+.questions{
+    flex: 7;
+}
