@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width:99vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header{
+    height: 10vh;
+    text-align: center;
+    color: white;
+    background-color: rgb(5,36,38);
+}
+.main{
+    height: 90vh;
+    background-image: url("../img/img-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form-contain{
+    width: 39vw;
+    height: 50vh;
+    margin-left: 30vw;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+}
+.header-form{
+    flex: 2;
+    color: white;
+    background-color: rgb(81,191,208);
+}
+form{
+    flex: 8;
+    background-color: white;
+}
+input[type="text"]{
+    width: 35vw;
+    margin-left: 2vw;
+    height: 10vh;
+    margin-top: 2vh;
+    background-color: rgb(245,245,245);
+    font-size: 25px;
+    border: none;
+}
+.connect{
+    margin-top: 5vh;
+}
+input[type="submit"]{
+    margin-left: 2vw;
+    height: 6vh;
+    font-size: 20px;
+    border: none;
+}
+input[id="connexion"]{
+width: 8vw;
+color: white;
+background-color: rgb(81,191,208);
+}
+input[id="inscription"]{
+    background-color: white;
+    color: gray;
+}
