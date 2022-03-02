@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="header">
-    <div class="big-title"><h1>CREÉR ET PARAMÉTRER VOS QUIZZ</h1></div>    
-    <div class="deconnexion"><input type="submit" value="Déconnexion"></div>
+    <div class="big-title"><h1>CREER ET PARAMETRER VOS QUIZZ</h1></div>    
+    <div class="deconnexion"><a href="<?=WEB_ROOT?>"><input type="submit" value="Deconnexion"></a></div>
     </div>
     <div class="main">
         <div class="taches-admin">
@@ -27,11 +27,11 @@
                     <div class="img3"></div>
                 </div>
                 <div class="creer-questions">
-                    <label for="">Créer Questions</label>
+                    <label for="">Creer Questions</label>
                     <div class="img4"></div>
                 </div>
                 <div class="creer-admin">
-                    <label for="">Créer un admin</label>
+                    <label for="">Creer un admin</label>
                     <div class="img2"></div>
                 </div>
             </div>

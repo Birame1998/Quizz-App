@@ -12,7 +12,6 @@ flex-direction: column;
 }
 .header{
     flex: 1;
-    /* border: solid; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,7 +29,7 @@ flex-direction: column;
     flex: 1;
 
 }
-input[value="Déconnexion"]{
+input[value="Deconnexion"]{
     padding: 1vh;
     width: 8vw;
     margin-top: 3vh;
@@ -41,21 +40,19 @@ input[value="Déconnexion"]{
 }
 .main{
     flex: 9;
-    border: solid;
     display: flex;
     flex-direction: row;
 }
 .taches-admin{
     margin-top: 5vh;
     flex:3;
-    border: solid;
     display: flex;
     flex-direction: column;
 
 }
 .avatar{
     flex:3;
-    background-image: linear-gradient(210deg,white 20%,rgb(93,195,210) 80%);
+    background-image: linear-gradient(200deg,white 20%,rgb(93,195,210) 80%);
 }
 label{
 color: gray;
@@ -67,15 +64,59 @@ font-size: 1.3rem;
 }
 .liste-question{
     height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.img1{
+    flex:1;
+    height: 5vh;
+    background-image: url(../img/ic-liste.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+label{
+    flex:9;
 }
 .creer-admin{
     height: 5vh;
+    display: flex;
+    justify-content: space-between;
 }
+.img3{
+    flex:1;
+    height: 5vh;
+    background-image: url(../img/ic-ajout.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
 .liste-joueurs{
     height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.img2{
+    flex: 1;
+    height: 5vh;
+    background-image: url(../img/ic-ajout.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    cursor:pointer;
 }
 .creer-questions{
     height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.img4{
+    flex: 1;
+    height: 5vh;
+    background-image: url(../img/ic-liste.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 .questions{
     flex: 7;

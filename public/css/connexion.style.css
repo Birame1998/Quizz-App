@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    padding: 0;
 }
 
 body{
@@ -30,7 +31,7 @@ h1{
 }
 .main{
     height: 90vh;
-    background-image: url("../img/img-bg.jpg");
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.459)),url("../img/img-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -56,7 +57,7 @@ form{
     flex: 8;
     background-color: white;
 }
-input[type="email"]{
+input[type="text"]{
     width: 30vw;
     height: 8vh;
     background-color: rgb(240,240,240);
@@ -74,7 +75,7 @@ input[type="password"]{
 .connect-params{
     display: block;
 }
-.connect{
+.connect_sign-in{
     margin-top: 10vh;
 }
 .login{
@@ -87,7 +88,7 @@ background-color: rgb(240,240,240);
 .password{
     width: auto;
     margin-left: 2vw;
-    margin-top: 3vh;
+    margin-top: 7vh;
     margin-right: 2vw;
     background-color: rgb(240,240,240);
 }

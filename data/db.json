@@ -3,16 +3,16 @@
     {
         "nom":"Diallo",
         "prenom":"El Hadj Ibrahima",
-        "login":"dialloe1999@gmail.com",
-        "password":"diallo",
+        "login":"joueur@gmail.com",
+        "password":"joueur",
         "role":"ROLE_JOUEUR",
         "score":30
     },
     {
         "nom":"Diouf",
         "prenom":"Birame Moussa",
-        "login":"biramemoussadiouf@gmail.com",
-        "password":"diouf",
+        "login":"admin@gmail.com",
+        "password":"admin",
         "role":"ROLE_ADMIN",
         "score":0
     }
