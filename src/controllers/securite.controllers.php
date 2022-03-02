@@ -17,6 +17,8 @@ if ($_SERVER["REQUEST_METHOD"]=="GET") {
     if (isset($_GET['action'])) {
         if ($_GET['action']=="connexion") {
             require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
+        }elseif ($_GET['action']=="deconnexion") {
+             logout();
         }
     }
     else{
@@ -52,4 +54,10 @@ function connexion(string $login,string $password)
         header("location:".WEB_ROOT);
         exit();
     }
+}
+
+function logout()
+{
+   session_destroy();
+   header("location:".WEB_ROOT);  
 }

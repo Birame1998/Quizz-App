@@ -10,7 +10,7 @@
 <body>
     <div class="header">
     <div class="big-title"><h1>CREER ET PARAMETRER VOS QUIZZ</h1></div>    
-    <div class="deconnexion"><a href="<?=WEB_ROOT?>"><input type="submit" value="Deconnexion"></a></div>
+    <div class="deconnexion"><a href="<?=WEB_ROOT."?controller=securite&action=deconnexion"?>"><input type="submit" value="Deconnexion"></a></div>
     </div>
     <div class="main">
         <div class="taches-admin">

@@ -13,23 +13,41 @@
     <div class="header">
         <div class="logo"></div>
         <h1>Le plaisir de jouer</h1>
+        <?php
+        if (isset($_SESSION[KEY_ERRORS])) {
+            $errors=$_SESSION[KEY_ERRORS];
+            unset($_SESSION[KEY_ERRORS]); 
+        }
+        
+        ?>
     </div>
     <div class="main">
         <div class="form-contain">
             <div class="header-form">
-                <p>Login form</p>
+                <h2>Login form</h2>
+                <span>x</span>
             </div>
             <form action="<?= WEB_ROOT.DIRECTORY_SEPARATOR."index.php" ?>" method="POST">
                 <input type="hidden" name="action" value="connexion">
                 <input type="hidden" name="controller" value="securite">
-
+                <?php if (isset($errors['connexion'])):?>
+                <p style="color:red"><?=$errors['connexion']?></p>
+                <?php endif?>
                 <div class="connect-params">
                     <div class="login">
                         <input type="text" name="login" placeholder="Login" id="login">
+                        <?php if (isset($errors['login'])):?>
+                          <p style="color:red"><?=$errors['login']?></p>
+                        <?php endif?>
+ 
                         <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-login.png" ?>" alt="" width="5%" height="1%">
                     </div>
                     <div class="password">
                         <input type="password" name="password" placeholder="Password" id="password">
+                        <?php if (isset($errors['password'])):?>
+                          <p style="color:red"><?=$errors['password']?></p>
+                        <?php endif?>
+ 
                         <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-password.png" ?>" alt="" width="5%" height="1%">
                     </div>
                 </div>
