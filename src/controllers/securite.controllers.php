@@ -59,5 +59,6 @@ function connexion(string $login,string $password)
 function logout()
 {
    session_destroy();
-   header("location:".WEB_ROOT);  
+   header("location:".WEB_ROOT);
+   exit();  
 }
