@@ -1,9 +1,8 @@
 <?php
-require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
-?>
+require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php"); ?>
+
 <link rel="stylesheet" href="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "css" . DIRECTORY_SEPARATOR . "connexion.style.css" ?>" media="screen" type="text/css">
-    
-    </div>
+
     <div class="main">
         <div class="form-contain">
             <div class="header-form">
@@ -38,10 +37,5 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
                     <input type="submit" value="Connexion" id="connexion" name="btnconnexion">
             </form>
             <a href="<?=PATH_VIEWS."securite".DIRECTORY_SEPARATOR."inscription.html.php" ?>" id="inscription">S'inscrire pour jouer</a>
-        </div>
-    </div>
-    </div>
-    <script src="<?= WEB_ROOT.DIRECTORY_SEPARATOR."js"."script.validation.js"?>"></script>
-    <?php
-require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
-    ?>
+
+
