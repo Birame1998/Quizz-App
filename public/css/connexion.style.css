@@ -121,3 +121,13 @@ background-color: rgb(81,191,208);
 p{
     font-size: 1.3rem;
 }
+.form-control small{
+    color: red;
+    margin-left: 10%;
+    text-align: center;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
