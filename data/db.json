@@ -3,11 +3,56 @@
     {
         "nom":"Diallo",
         "prenom":"El Hadj Ibrahima",
-        "login":"joueur@gmail.com",
-        "password":"joueur",
+        "login":"joueur1@gmail.com",
+        "password":"joueur1",
         "role":"ROLE_JOUEUR",
         "score":30
     },
+    {
+        "nom":"Balde",
+        "prenom":"Mamadou Lamarana",
+        "login":"joueur2@gmail.com",
+        "password":"joueur2",
+        "role":"ROLE_JOUEUR",
+        "score":130
+    },
+    {
+        "nom":"Kebe",
+        "prenom":"Malick",
+        "login":"joueur3@gmail.com",
+        "password":"joueur3",
+        "role":"ROLE_JOUEUR",
+        "score":60
+    },
+
+    {
+        "nom":"Barry",
+        "prenom":"Oumar",
+        "login":"joueur4@gmail.com",
+        "password":"joueur4",
+        "role":"ROLE_JOUEUR",
+        "score":180
+    },
+
+    {
+        "nom":"Sall",
+        "prenom":"Cheikh",
+        "login":"joueur5@gmail.com",
+        "password":"joueur",
+        "role":"ROLE_JOUEUR",
+        "score":10
+    },
+
+    {
+        "nom":"Diop",
+        "prenom":"Abdou",
+        "login":"joueur6@gmail.com",
+        "password":"joueur6",
+        "role":"ROLE_JOUEUR",
+        "score":50
+    },
+
+
     {
         "nom":"Diouf",
         "prenom":"Birame Moussa",

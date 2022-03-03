@@ -40,6 +40,7 @@ function connexion(string $login,string $password)
     if (count($errors)==0) {
         $user=find_user_login_password($login,$password);
         if (count($user)!=0){
+            // var_dump(find_users(ROLE_JOUEUR));die();
             $_SESSION[KEY_USER_CONNECT]=$user;
             header("location:".WEB_ROOT."?controller=user&action=accueil");
             exit();

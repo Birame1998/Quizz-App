@@ -11,6 +11,24 @@ display: flex;
 flex-direction: column;
 }
 .header{
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(5,36,38);
+}
+.logo{
+    width: 10vw;
+    height: 10vh;
+    align-content: flex-start;
+    background-image: url(../img/logo-QuizzSA.png);
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+.slogan{
+    margin-left: 30vw;
+}
+.header-admin{
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -52,11 +70,23 @@ input[value="Deconnexion"]{
 }
 .avatar{
     flex:3;
-    background-image: linear-gradient(300deg,white 20%,rgb(93,195,210) 80%);
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(120deg,white 10%,rgb(93,195,210) 80%);
+    color: white;
+}
+.admin-profile{
+    flex: 6;
+}
+.admin-name{
+    flex: 4;
+    margin-top: 1vh;
+    margin-right: 0.5vw;
 }
 label{
 color: gray;
 font-size: 1.3rem;
+margin-left: 5vh;
 }
 .taches{
     flex: 7;
@@ -83,10 +113,13 @@ label{
     display: flex;
     justify-content: space-between;
 }
+a{
+    flex: 9;
+}
 .img3{
     flex:1;
     height: 5vh;
-    background-image: url(../img/ic-ajout.png);
+    background-image: url(../img/ic-liste.png);
     background-size: 70%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -96,6 +129,7 @@ label{
     height: 5vh;
     display: flex;
     justify-content: space-between;
+    
 }
 .img2{
     flex: 1;
@@ -113,11 +147,49 @@ label{
 .img4{
     flex: 1;
     height: 5vh;
-    background-image: url(../img/ic-liste.png);
+    background-image: url(../img/ic-ajout.png);
     background-size: 70%;
     background-repeat: no-repeat;
     cursor: pointer;
 }
-.questions{
+.contain-view{
     flex: 7;
+    text-align: center;
+    margin-top: 5vh;
+}
+.img5{
+    flex:1;
+    height: 5vh;
+    background-image: url(../img/ic-liste-active.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    cursor: pointer;   
+}
+table{
+    margin-left: 20vw;
+    width: 30vw;
+    border: solid rgb(81,191,208);
+    margin-top: 5vh;
+    border-radius: 20px;
+}
+tr{
+    height: 5vh;
+    font-size: 1.5rem;
+    color: gray;
+
+}
+.listedesjoueurs{
+    font-size: 2.3rem;
+    color: rgb(112, 110, 110);
+    font-style: italic;
+}
+button{
+    height: 5vh;
+    width: 7vw;
+    margin-top: 1vh;
+    margin-left: 2vw;
+    background-color: rgb(81,191,208);
+    border-color: rgb(81,191,208);
+    font-size: 1em;
+    color: white;
 }

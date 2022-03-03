@@ -6,7 +6,10 @@ function find_data(string $key):array{
 
 }
 
-
+function save_data(string $key,array $data):array
+{
+    return[];
+}
 
 
 

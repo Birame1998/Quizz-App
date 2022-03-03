@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "css" . DIRECTORY_SEPARATOR . "connexion.style.css" ?>" media="screen" type="text/css">
-    <title>Page de connexion</title>
-</head>
-
-<body>
-    <div class="header">
-        <div class="logo"></div>
-        <h1>Le plaisir de jouer</h1>
-        <?php
-        if (isset($_SESSION[KEY_ERRORS])) {
-            $errors=$_SESSION[KEY_ERRORS];
-            unset($_SESSION[KEY_ERRORS]); 
-        }
-        
-        ?>
+<?php
+require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
+?>
+<link rel="stylesheet" href="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "css" . DIRECTORY_SEPARATOR . "connexion.style.css" ?>" media="screen" type="text/css">
+    
     </div>
     <div class="main">
         <div class="form-contain">
@@ -27,7 +10,7 @@
                 <h2>Login form</h2>
                 <span>x</span>
             </div>
-            <form action="<?= WEB_ROOT.DIRECTORY_SEPARATOR."index.php" ?>" method="POST">
+            <form action="<?= WEB_ROOT.DIRECTORY_SEPARATOR."index.php" ?>" id="form" method="POST">
                 <input type="hidden" name="action" value="connexion">
                 <input type="hidden" name="controller" value="securite">
                 <?php if (isset($errors['connexion'])):?>
@@ -58,6 +41,7 @@
         </div>
     </div>
     </div>
-</body>
-
-</html>
+    <script src="<?= WEB_ROOT.DIRECTORY_SEPARATOR."js"."script.validation.js"?>"></script>
+    <?php
+require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
+    ?>
