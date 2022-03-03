@@ -3,7 +3,6 @@
 require_once(PATH_SRC."models".DIRECTORY_SEPARATOR."user.models.php");
 
 if ($_SERVER["REQUEST_METHOD"]=="POST") {
-  
     if (isset($_POST['action'])) {
         if ($_POST['action']=='connexion') {
             $login=$_POST['login'];
@@ -40,10 +39,10 @@ function connexion(string $login,string $password)
     if (count($errors)==0) {
         $user=find_user_login_password($login,$password);
         if (count($user)!=0){
-            // var_dump(find_users(ROLE_JOUEUR));die();
             $_SESSION[KEY_USER_CONNECT]=$user;
             header("location:".WEB_ROOT."?controller=user&action=accueil");
             exit();
+
         }else {
             $errors['connexion']="login ou mot de passe incorrect";
             $_SESSION[KEY_ERRORS]=$errors;
