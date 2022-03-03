@@ -18,6 +18,8 @@ if ($_SERVER["REQUEST_METHOD"]=="GET") {
             require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."connexion.html.php");
         }elseif ($_GET['action']=="deconnexion") {
              logout();
+        }elseif($_GET['action']=="inscription"){
+            require_once(PATH_VIEWS."securite".DIRECTORY_SEPARATOR."inscription.html.php");
         }
     }
     else{
