@@ -22,7 +22,7 @@ body{
     width: 10vw;
     height: 10vh;
     align-content: flex-start;
-    background-image: url(../img/logo-QuizzSA.png);
+    /* background-image: url(../img/logo-QuizzSA.png); */
     background-size: 30%;
     background-repeat: no-repeat;
 }
@@ -107,11 +107,14 @@ width: 8vw;
 color: white;
 background-color: rgb(81,191,208);
 }
-input[id="inscription"]{
+#inscription{
     background-color: white;
     color: gray;
+    font-size: 1.3rem;
+    margin-left: 8vw;
+    text-decoration: none;
 }
-input[id="inscription"]:hover{
+#inscription:hover{
     background-color: rgb(81,191,208);
     color: white;
 }

@@ -10,7 +10,7 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
                 <h2>Login form</h2>
                 <span>x</span>
             </div>
-            <form action="<?= WEB_ROOT.DIRECTORY_SEPARATOR."index.php" ?>" id="form" method="POST">
+            <form action="<?= WEB_ROOT?>" id="form" method="POST">
                 <input type="hidden" name="action" value="connexion">
                 <input type="hidden" name="controller" value="securite">
                 <?php if (isset($errors['connexion'])):?>
@@ -37,7 +37,7 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
                 <div class="connect_sign-in">
                     <input type="submit" value="Connexion" id="connexion" name="btnconnexion">
             </form>
-            <input type="submit" value="S'inscrire pour jouer" id="inscription" name="inscription">
+            <a href="<?=PATH_VIEWS."securite".DIRECTORY_SEPARATOR."inscription.html.php" ?>" id="inscription">S'inscrire pour jouer</a>
         </div>
     </div>
     </div>

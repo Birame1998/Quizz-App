@@ -9,7 +9,9 @@
 </head>
 <body>
 <div class="header">
-        <div class="logo"></div>
+        <div class="logo">
+            <img src="<?=WEB_ROOT."img".DIRECTORY_SEPARATOR."logo-QuizzSA.png" ?>" alt="img" srcset="" width="80px" height="90px">
+        </div>
         <h1 class="slogan">Le plaisir de jouer</h1>
         <?php
         if (isset($_SESSION[KEY_ERRORS])) {
