@@ -1,5 +1,6 @@
 <?php
-require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php"); ?>
+require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php"); 
+?>
 
 <link rel="stylesheet" href="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "css" . DIRECTORY_SEPARATOR . "connexion.style.css" ?>" media="screen" type="text/css">
 
@@ -36,6 +37,6 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                 <div class="connect_sign-in">
                     <input type="submit" value="Connexion" id="connexion" name="btnconnexion">
             </form>
-            <a href="<?=PATH_VIEWS."securite".DIRECTORY_SEPARATOR."inscription.html.php" ?>" id="inscription">S'inscrire pour jouer</a>
+            <a href="<?=WEB_ROOT."?controller=securite&action=inscription"?>" id="inscription">S'inscrire pour jouer</a>
 
 
