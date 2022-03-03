@@ -10,11 +10,7 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
                 <h2>Login form</h2>
                 <span>x</span>
             </div>
-<<<<<<< HEAD
             <form action="<?= WEB_ROOT?>" id="form" method="POST">
-=======
-            <form action="<?= WEB_ROOT ?>" id="form" method="POST">
->>>>>>> bae88af4fa4af8de48b7de8eeaa57b7c766448da
                 <input type="hidden" name="action" value="connexion">
                 <input type="hidden" name="controller" value="securite">
                 <?php if (isset($errors['connexion'])):?>
