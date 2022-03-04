@@ -15,7 +15,14 @@ function valid_email(string $key,string $data,array $error,string $message="Emai
 
 function valid_password(string $key,string $data,array $error,string $message="Mot de passe invalide")
 {
-    if (!preg_match('^(?.=*[A-Z])(?.=*[a-z])(?.=*[0-9] {6,})$',$_POST[$key])){
+    // if (!preg_match('^(?.=*[A-Z])(?.=*[a-z])(?.=*[0-9] {6,})$',$_POST[$key])){
+    //     $error[$key]=$message;
+    // }
+    if (1+1==2) {
         $error[$key]=$message;
-    }
+}
+}
+function confirm_password($p1,$p2)
+{
+    return $p1==$p2;
 }

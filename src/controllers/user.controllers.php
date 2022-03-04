@@ -29,15 +29,3 @@ function lister_joueur()
         $data=find_users(ROLE_JOUEUR);
         require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."liste.joueurs.html.php");
 }
-function register():array
-{
-    $newUser=[
-        'prenom'=>$_POST['prenom'],
-        'nom' =>$_POST['nom'],
-        'login'=>$_POST['login'],
-        'password'=>$_POST['password'],
-        'role'=>"ROLE_JOUEUR",
-        'score'=>0
-    ];
-    return $newUser;
-}

@@ -122,10 +122,12 @@ p{
     font-size: 1.3rem;
     
 }
- 
 
 .form-control.error small{
     color: red;
     margin-left: 10%;
     text-align: center;
+}
+.ins-form-controller .error{
+    color: red;
 }

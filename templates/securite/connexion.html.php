@@ -21,7 +21,7 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                     <div class="login">
                         <input type="text" name="login" placeholder="Login" id="login">
                         <?php if (isset($errors['login'])) : ?>
-                            <p style="color:red"><?= $errors['login'] ?></p>
+                            <p class="error"><?= $errors['login'] ?></p>
                         <?php endif ?>
                         <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-login.png" ?>" alt="" width="5%" height="1%">
                     </div>
@@ -32,7 +32,7 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                 <div class="password">
                     <input type="password" name="password" placeholder="Password" id="password">
                     <?php if (isset($errors['password'])) : ?>
-                        <p style="color:red"><?= $errors['password'] ?></p>
+                        <p class="error"><?= $errors['password'] ?></p>
                     <?php endif ?>
 
                     <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-password.png" ?>" alt="" width="5%" height="1%">
