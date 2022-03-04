@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"]=="GET") {
             }
         }elseif($_GET['action']=="liste.joueurs"){
             lister_joueur();
-            require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php"); 
+ 
         }
     }
 }

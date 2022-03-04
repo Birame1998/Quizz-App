@@ -15,39 +15,11 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
   </div>
     <div class="main">
         <?php if (is_admin()): ?>
-        <div class="taches-admin">
-            <div class="avatar">
-                <div class="admin-profile">
-
-                </div>
-                <div class="admin-name">
-                  <h2><?=$_SESSION[KEY_USER_CONNECT]["prenom"]?></h2><br>
-                  <h2><?=$_SESSION[KEY_USER_CONNECT]["nom"]?></h2>               
-                </div>                
-            </div>
-            <div class="taches">
-                <div class="liste-question">
-                    <label for="">Liste Questions</label>
-                    <div class="img1"></div>
-                </div>
-                <div class="creer-admin">
-                    <label for="">Creer un admin</label>
-                    <div class="img2"></div>
-                </div>
-                <div class="liste-joueurs">
-                    <a href="<?=WEB_ROOT."?controller=user&action=liste.joueurs"?>"><label for="">Liste Joueurs</label></a>
-                    <div class="img3"></div>
-                </div>
-                <div class="creer-questions">
-                    <label for="">Creer Questions</label>
-                    <div class="img4"></div>
-                </div>        
-            </div>
-        </div>    
+            <?php require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."menu.admin.inc.html.php")?>
+        <?php endif ?>
         <div class="contain-view">
 
         </div>
-        <?php endif ?>
     </div>
     
         

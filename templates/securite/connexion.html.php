@@ -14,7 +14,7 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                 <input type="hidden" name="action" value="connexion">
                 <input type="hidden" name="controller" value="securite">
                 <?php if (isset($errors['connexion'])):?>
-                <p style="color:red"><?=$errors['connexion']?></p>
+                <p class="errors"><?=$errors['connexion']?></p>
                 <?php endif?>
                 <div class="connect-params">
                     <div class="login">
