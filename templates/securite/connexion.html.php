@@ -17,6 +17,7 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                 <p class="errors"><?=$errors['connexion']?></p>
                 <?php endif?>
                 <div class="connect-params">
+                <div class="form-control error">    
                     <div class="login">
                         <input type="text" name="login" placeholder="Login" id="login">
                         <?php if (isset($errors['login'])) : ?>
@@ -25,6 +26,7 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                         <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-login.png" ?>" alt="" width="5%" height="1%">
                     </div>
                     <small id="error-login"></small>
+                </div>    
                 </div>
                 <div class="form-control error">
                 <div class="password">
