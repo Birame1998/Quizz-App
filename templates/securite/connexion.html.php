@@ -36,12 +36,14 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                     <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-password.png" ?>" alt="" width="5%" height="1%">
                 </div>
                 <small id="error-password"></small>
-                </div>
             </div>
             <div class="connect_sign-in">
-                <input type="submit" value="Connexion" id="connexion" name="btnconnexion">
+        <input type="submit" value="Connexion" id="connexion" name="btnconnexion">
         </form>
-        <a href="<?= PATH_VIEWS . "securite" . DIRECTORY_SEPARATOR . "inscription.html.php" ?>" id="inscription">S'inscrire pour jouer</a>
+        <a href="<?=WEB_ROOT."?controller=securite&action=inscription"?>" id="inscription">S'inscrire pour jouer</a>
+    </div>  
+    </div>
+        
         <?php
         require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "footer.inc.html.php");
         ?>
