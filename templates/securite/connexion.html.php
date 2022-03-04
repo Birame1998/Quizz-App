@@ -18,7 +18,7 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                 <p style="color:red"><?= $errors['connexion'] ?></p>
             <?php endif ?>
             <div class="connect-params">
-                <div class="form-control">
+                <div class="form-control error">
                 <div class="login">
                         <input type="text" name="login" placeholder="Login" id="login">
                         <?php if (isset($errors['login'])) : ?>
@@ -26,9 +26,9 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                         <?php endif ?>
                         <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-login.png" ?>" alt="" width="5%" height="1%">
                     </div>
-                    <small></small>
+                    <small id="error-login"></small>
                 </div>
-                <div class="form-control">
+                <div class="form-control error">
                 <div class="password">
                     <input type="password" name="password" placeholder="Password" id="password">
                     <?php if (isset($errors['password'])) : ?>
@@ -37,7 +37,7 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
 
                     <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-password.png" ?>" alt="" width="5%" height="1%">
                 </div>
-                <small></small>
+                <small id="error-password"></small>
                 </div>
             </div>
             <div class="connect_sign-in">
