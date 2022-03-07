@@ -23,10 +23,10 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                         <?php if (isset($errors['login'])) : ?>
                             <p style="color:red"><?= $errors['login'] ?></p>
                         <?php endif ?>
-                        <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-login.png" ?>" alt="" width="5%" height="1%">
+                        <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-login.png" ?>" alt="login-icon">
                     </div>
-                    <small id="error-login"></small>
                 </div>    
+                <small id="error-login" class="error-login"></small>
                 </div>
                 <div class="form-control error">
                 <div class="password">
@@ -34,16 +34,15 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                     <?php if (isset($errors['password'])) : ?>
                         <p style="color:red"><?= $errors['password'] ?></p>
                     <?php endif ?>
-
-                    <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-password.png" ?>" alt="" width="5%" height="1%">
+                    <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-password.png" ?>" alt="password-icon">
                 </div>
-                <small id="error-password"></small>
             </div>
-            <div class="connect_sign-in">
+            <small id="error-password" class="error-password"></small>
+        <div class="connect_sign-in">
         <input type="submit" value="Connexion" id="connexion" name="btnconnexion">
-        </form>
         <a href="<?=WEB_ROOT."?controller=securite&action=inscription"?>" id="inscription">S'inscrire pour jouer</a>
-    </div>  
+        </div>
+        </form>  
     </div>
         
         <?php

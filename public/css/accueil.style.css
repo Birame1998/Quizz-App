@@ -17,13 +17,9 @@ flex-direction: column;
     justify-content: flex-start;
     background-color: rgb(5,36,38);
 }
-.logo{
-    width: 10vw;
-    height: 10vh;
-    align-content: flex-start;
-    background-image: url(../img/logo-QuizzSA.png);
-    background-size: 30%;
-    background-repeat: no-repeat;
+img[alt="img"]{
+    width: 100px;
+    height: 100px;
 }
 .slogan{
     margin-left: 30vw;
@@ -43,6 +39,7 @@ flex-direction: column;
     margin-top: 2vh;
     font-size: 20px;
 }
+
 .deconnexion{
     flex: 1;
 
@@ -190,14 +187,23 @@ tr{
     color: rgb(112, 110, 110);
     font-style: italic;
 }
+.next-prev{
+    display: flex;
+    margin-top: 2vh;
+    width: 30vw;
+    margin-left: 20vw;
+    justify-content: space-between;
+}
 button{
     height: 5vh;
     width: 7vw;
     margin-top: 1vh;
-    margin-left: 2vw;
     background-color: rgb(81,191,208);
     border-color: rgb(81,191,208);
     font-size: 1em;
     color: white;
+}
+.previous{
+    visibility: hidden;
 }
 

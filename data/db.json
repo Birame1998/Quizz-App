@@ -57,7 +57,7 @@
         "nom":"Diouf",
         "prenom":"Birame Moussa",
         "login":"admin@gmail.com",
-        "password":"admin",
+        "password":"admin1",
         "role":"ROLE_ADMIN",
         "score":0
     }

@@ -10,7 +10,7 @@
 <body>
 <div class="header">
         <div class="logo">
-            <img src="<?=WEB_ROOT."img".DIRECTORY_SEPARATOR."logo-QuizzSA.png" ?>" alt="img" srcset="" width="80px" height="90px">
+            <img src="<?=WEB_ROOT."img".DIRECTORY_SEPARATOR."logo-QuizzSA.png" ?>" alt="img" srcset="">
         </div>
         <h1 class="slogan">Le plaisir de jouer</h1>
         <?php

@@ -1,6 +1,7 @@
 <?php
 require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
 ?>
+
 <link rel="stylesheet" href="<?=WEB_ROOT.DIRECTORY_SEPARATOR."css".DIRECTORY_SEPARATOR."accueil.style.css" ?>">
   <div class="header-admin">
     <div class="big-title">
@@ -18,8 +19,20 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
             <?php require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."menu.admin.inc.html.php")?>
         <?php endif ?>
         <div class="contain-view">
-
-        </div>
+         <?php
+         if ($_GET['action']=="liste.joueurs") {
+          echo $content_for_views;
+         } 
+         ?>
+         <?php if ($_GET['action']!="accueil"):?>
+         <div class="next-prev">
+         <button class="previous">Precedent</button>
+         <button class="next">Suivant</button>
+         </div>
+         <?php endif ?>
+       </div> 
+         
+         
     </div>
     
         

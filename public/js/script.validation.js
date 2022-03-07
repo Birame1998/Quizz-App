@@ -25,11 +25,7 @@ form.addEventListener("submit", function (e) {
 
   if (ChampObligatoir(inputPassword)) {
     e.preventDefault();
-    showError(
-      inputPassword,
-      smallpassword,
-      "le mot de passe est requis pour la connexion"
-    );
+    showError(inputPassword,smallpassword,"le mot de passe est requis pour la connexion");
   }else{
     if (!containNumber(inputPassword.value)) {
       e.preventDefault();
@@ -42,11 +38,7 @@ form.addEventListener("submit", function (e) {
     }
     if (!checkLength(inputPassword)) {
       e.preventDefault();
-      showError(
-        inputPassword,
-        smallpassword,
-        "le mot de passe doit contenir au moins 6 caracteres"
-      );
+      showError(inputPassword,smallpassword,"le mot de passe doit contenir au moins 6 caracteres");
     }
   }
 

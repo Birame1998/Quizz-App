@@ -31,7 +31,7 @@ h1{
 }
 .main{
     height: 90vh;
-    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.459)),url("../img/img-bg.jpg");
+    background:linear-gradient(rgba(5,36,38,0.2),rgba(5,36,38,0.459)),url("../img/img-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -42,9 +42,10 @@ h1{
     margin-top: 15vh;
     display: flex;
     flex-direction: column;
+    box-sizing: content-box;
 }
 .header-form{
-    flex: 2;
+    height: 12vh;
     color: white;
     background-color: rgb(81,191,208);
     display: flex;
@@ -58,8 +59,9 @@ h2{
     font-size: 2rem;
 }
 form{
-    flex: 8;
+    height: 60vh;
     background-color: white;
+
 }
 input[type="text"]{
     width: 30vw;
@@ -76,25 +78,36 @@ input[type="password"]{
     border: none;
 
 }
-.connect-params{
+/* .connect-params{
     display: block;
-}
+} */
 .connect_sign-in{
-    margin-top: 10vh;
+    margin-top: 8vh;
+    /* border: solid; */
+    height: 12vh;
 }
 .login{
-width: auto;
+width: 38vw;
+/* border: solid; */
 margin-top: 5vh;
-margin-left: 2vw;
-margin-right: 2vw;
+height: 10vh;
 background-color: rgb(240,240,240);
 }
 .password{
-    width: auto;
-    margin-left: 2vw;
-    margin-top: 7vh;
-    margin-right: 2vw;
+    width: 38vw;
+    /* border: solid; */
+    height: 10vh;
+    margin-top: 3vh;
     background-color: rgb(240,240,240);
+}
+img[alt="img"]{
+    width: 100px;
+    height: 100px;
+}
+img{
+    height: 30px;
+    width: 30px;
+    margin-left: 2vw;
 }
 input[type="submit"]{
     margin-left: 2vw;
@@ -122,10 +135,23 @@ p{
     font-size: 1.3rem;
     
 }
- 
 
-.form-control.error small{
+.form-control.error{
+    height: 15vh;
+    margin-top: 2vh;
+    
+} 
+small{
+    font-size: 1.6rem;
+}
+.error-login{
     color: red;
-    margin-left: 10%;
-    text-align: center;
+    font-style: italic;
+    font-display: none;
+
+}
+.error-password{
+    color: red;
+    font-style: italic;
+    font-display: none;
 }

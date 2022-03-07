@@ -15,19 +15,19 @@ if ($_SERVER["REQUEST_METHOD"]=="GET") {
             exit();
         }
         if ($_GET['action']=="accueil") {
-            if (is_connect()) {
-                require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");          
-            }
+            require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");          
         }elseif($_GET['action']=="liste.joueurs"){
             lister_joueur();
- 
-        }
+       }
     }
 }
 function lister_joueur()
-{
-        $data=find_users(ROLE_JOUEUR);
-        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."liste.joueurs.html.php");
+{ 
+    ob_start();
+    $data=find_users(ROLE_JOUEUR);
+    require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."liste.joueurs.html.php");
+    $content_for_views=ob_get_clean();
+    require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php"); 
 }
 function register():array
 {
