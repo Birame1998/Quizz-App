@@ -13,11 +13,7 @@
 <body>
     <div class="header">
         <div class="logo">
-<<<<<<< HEAD
             <img src="<?=WEB_ROOT."img".DIRECTORY_SEPARATOR."logo-QuizzSA.png" ?>" alt="img" srcset="">
-=======
-            <img src="<?= WEB_ROOT . "img" . DIRECTORY_SEPARATOR . "logo-QuizzSA.png" ?>" alt="img" srcset="" width="80px" height="90px">
->>>>>>> 524f0c185c6247ced321742cb1345add3edb5c3e
         </div>
         <h1 class="slogan">Le plaisir de jouer</h1>
         <?php

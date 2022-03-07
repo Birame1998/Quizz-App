@@ -98,18 +98,15 @@ small{
 .invalide{
     border-color: red;
 }
-<<<<<<< HEAD
-/* img[alt="img"]{
+img[alt="img"]{
     width: 100px;
     height: 100px;
-} */
+}
 
-=======
 .error{
     text-align: center;
     color: red;
 }
->>>>>>> 524f0c185c6247ced321742cb1345add3edb5c3e
 
 
 

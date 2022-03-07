@@ -21,7 +21,6 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                 <div class="form-control error">
                     <div class="login">
                         <input type="text" name="login" placeholder="Login" id="login">
-<<<<<<< HEAD
                         <?php if (isset($errors['login'])) : ?>
                             <p style="color:red"><?= $errors['login'] ?></p>
                         <?php endif ?>
@@ -29,33 +28,15 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                     </div>
                 </div>    
                 <small id="error-login" class="error-login"></small>
-=======
-                        <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-login.png" ?>" alt="" width="5%" height="1%">
-                    </div>
-                    <?php if (isset($errors['login'])) : ?>
-                        <p class="error"><?= $errors['login'] ?></p>
-                    <?php endif ?>
-                    <small id="error-login"></small>
-                </div>   
->>>>>>> 524f0c185c6247ced321742cb1345add3edb5c3e
                 </div>
                 <div class="form-control error">
                 <div class="password">
                     <input type="password" name="password" placeholder="Password" id="password">
-<<<<<<< HEAD
                     <?php if (isset($errors['password'])) : ?>
                         <p style="color:red"><?= $errors['password'] ?></p>
                     <?php endif ?>
                     <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-password.png" ?>" alt="password-icon">
                 </div>
-=======
-                    <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-password.png" ?>" alt="" width="5%" height="1%">
-                </div>
-                <?php if (isset($errors['password'])) : ?>
-                    <p class="error"><?= $errors['password'] ?></p>
-                <?php endif ?>
-                <small id="error-password"></small>
->>>>>>> 524f0c185c6247ced321742cb1345add3edb5c3e
             </div>
             <small id="error-password" class="error-password"></small>
         <div class="connect_sign-in">

@@ -71,7 +71,7 @@ function register($prenom, $nom, $login, $password, $password2, $avatar = null)
     // echo '<pre>';
     // var_dump($_FILES['avatar']['error']);die;
     // echo '<pre>';
-    if (isset($_FILES["avatar"]) && empty($_FILES["avatar"])) {
+    if (isset($_FILES["avatar"]) && !empty($_FILES["avatar"])) {
         $file_name = $_FILES['avatar']['name'];
         // $file_name=> renommer le ficher pour le rendre unique
         $file_route = ROOT . "public" . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $file_name;
@@ -81,6 +81,7 @@ function register($prenom, $nom, $login, $password, $password2, $avatar = null)
         if (in_array($ext, $extention_autorier)) {
             if (move_uploaded_file($file_to_save, $file_route)) {
                 //enregistrez dans le fichier json
+                
                 echo "fichier enregistré avec succés";
             }
         } else {

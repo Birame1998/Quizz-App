@@ -17,11 +17,7 @@ if ($_SERVER["REQUEST_METHOD"]=="GET") {
             require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");          
         }elseif($_GET['action']=="liste.joueurs"){
             lister_joueur();
-<<<<<<< HEAD
        }
-=======
-        }
->>>>>>> 524f0c185c6247ced321742cb1345add3edb5c3e
     }
 }
 function lister_joueur()
