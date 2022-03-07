@@ -7,7 +7,6 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
         }
     }
 }
-
 if ($_SERVER["REQUEST_METHOD"]=="GET") {
     if (isset($_GET['action'])) {
         if (!is_connect()) {
@@ -18,7 +17,11 @@ if ($_SERVER["REQUEST_METHOD"]=="GET") {
             require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");          
         }elseif($_GET['action']=="liste.joueurs"){
             lister_joueur();
+<<<<<<< HEAD
        }
+=======
+        }
+>>>>>>> 524f0c185c6247ced321742cb1345add3edb5c3e
     }
 }
 function lister_joueur()
@@ -28,16 +31,4 @@ function lister_joueur()
     require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."liste.joueurs.html.php");
     $content_for_views=ob_get_clean();
     require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php"); 
-}
-function register():array
-{
-    $newUser=[
-        'prenom'=>$_POST['prenom'],
-        'nom' =>$_POST['nom'],
-        'login'=>$_POST['login'],
-        'password'=>$_POST['password'],
-        'role'=>"ROLE_JOUEUR",
-        'score'=>0
-    ];
-    return $newUser;
 }

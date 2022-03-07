@@ -155,3 +155,6 @@ small{
     font-style: italic;
     font-display: none;
 }
+.ins-form-controller .error{
+    color: red;
+}

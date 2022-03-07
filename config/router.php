@@ -5,10 +5,13 @@ if (isset($_REQUEST['controller'])) {
         case 'user':
             require_once(PATH_SRC."controllers".DIRECTORY_SEPARATOR."user.controllers.php");
             break;
-        case 'securite':  
+        case 'securite':
             require_once(PATH_SRC."controllers".DIRECTORY_SEPARATOR."securite.controllers.php");  
             break;
-    } 
+        default:
+        require_once(PATH_SRC."controllers".DIRECTORY_SEPARATOR."errors.controllers.php");  
+            break;
+    }
 }else {
     require_once(PATH_SRC."controllers".DIRECTORY_SEPARATOR."securite.controllers.php");
 }

@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="<?= WEB_ROOT . "css" . DIRECTORY_SEPARATOR . "connexion.style.css" ?>" media="screen" type="text/css">
+    <link rel="stylesheet" href="<?= WEB_ROOT . "css" . DIRECTORY_SEPARATOR . "inscription.style.css" ?>" media="screen" type="text/css">
     <title>Quizz App</title>
 </head>
+
 <body>
-<div class="header">
+    <div class="header">
         <div class="logo">
+<<<<<<< HEAD
             <img src="<?=WEB_ROOT."img".DIRECTORY_SEPARATOR."logo-QuizzSA.png" ?>" alt="img" srcset="">
+=======
+            <img src="<?= WEB_ROOT . "img" . DIRECTORY_SEPARATOR . "logo-QuizzSA.png" ?>" alt="img" srcset="" width="80px" height="90px">
+>>>>>>> 524f0c185c6247ced321742cb1345add3edb5c3e
         </div>
         <h1 class="slogan">Le plaisir de jouer</h1>
         <?php
         if (isset($_SESSION[KEY_ERRORS])) {
-            $errors=$_SESSION[KEY_ERRORS];
-            unset($_SESSION[KEY_ERRORS]); 
+            $errors = $_SESSION[KEY_ERRORS];
+            unset($_SESSION[KEY_ERRORS]);
         }
         ?>
-</div>
+    </div>
