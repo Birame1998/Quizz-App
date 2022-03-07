@@ -7,7 +7,6 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
         }
     }
 }
-
 if ($_SERVER["REQUEST_METHOD"]=="GET") {
     if (isset($_GET['action'])) {
         if (!is_connect()) {
@@ -20,7 +19,6 @@ if ($_SERVER["REQUEST_METHOD"]=="GET") {
             }
         }elseif($_GET['action']=="liste.joueurs"){
             lister_joueur();
- 
         }
     }
 }

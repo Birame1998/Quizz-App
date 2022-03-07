@@ -59,6 +59,7 @@ h3{
 }
 .ins-form-controller{
     height: 10vh;
+    margin-top:2vh;
 }
 label{
     color: rgb(85, 84, 84);
@@ -83,9 +84,24 @@ button{
     width: 8vw;
     font-size: 1rem;
 }
-
-
-
+.submit{
+    margin-top: 2vh;
+}
+small{
+    color: red;
+    font-size: 18px;
+    font-style: italic;
+}
+.valide{
+    border-color: rgb(28, 241, 28);
+}
+.invalide{
+    border-color: red;
+}
+.error{
+    text-align: center;
+    color: red;
+}
 
 
 

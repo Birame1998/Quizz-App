@@ -1,7 +1,10 @@
 <?php
+if (isset($_SESSION[KEY_ERRORS])) {
+    $errors = $_SESSION[KEY_ERRORS];
+    unset($_SESSION[KEY_ERRORS]);
+}
 require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php");
 ?>
-<link rel="stylesheet" href="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "css" . DIRECTORY_SEPARATOR . "inscription.style.css" ?>" media="screen" type="text/css">
 <div class="main">
     <div class="ins-contain">
         <div class="ins-text">
@@ -11,53 +14,62 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                 <hr>
             </div>
             <div class="ins-settings">
-                <form action="<?= WEB_ROOT ?>" method="POST" enctype="multipart/form-data">
-
-                    <input type="hidden" name="action" value="inscription">
+                <form action="<?= WEB_ROOT ?>" method="POST" enctype="multipart/form-data" id="form-ins">
                     <input type="hidden" name="controller" value="securite">
-
+                    <input type="hidden" name="action" value="inscription">
                     <div class="ins-form-controller">
-                        <?php if (isset($errors['prenom'])) : ?>
-                            <p class="error"> <?= $errors['prenom'] ?></p>
-                        <?php endif ?>
                         <label for="prenom">Prenom</label><br>
-                        <input type="text" name="prenom" id="prenom" placeholder="Aaaa">
+                        <input type="text" name="prenom" id="prenom-ins" placeholder="Aaaa"><br>
+                        <?php if (isset($errors['prenom'])) : ?>
+                            <small class="error"><?= $errors['prenom'] ?></small>
+                        <?php endif ?>
+                        <small id="error-prenom-ins"></small>
                     </div>
                     <div class="ins-form-controller">
-                        <?php if (isset($errors['nom'])) : ?>
-                            <p class="error"> <?= $errors['nom'] ?></p>
-                        <?php endif ?>
                         <label for="nom">Nom</label><br>
-                        <input type="text" name="nom" id="nom" placeholder="BBBB">
+                        <input type="text" name="nom" id="nom-ins" placeholder="BBBB"><br>
+                        <?php if (isset($errors['nom'])) : ?>
+                            <small class="error"><?= $errors['nom'] ?></small>
+                        <?php endif ?>
+                        <small id="error-nom-ins"></small>
                     </div>
                     <div class="ins-form-controller">
+                        <label for="login-ins">Login</label><br>
+                        <input type="text" name="login" id="login-ins" placeholder="aaaaa@gmail.com"><br>
                         <?php if (isset($errors['login'])) : ?>
-                            <p class="error"> <?= $errors['login'] ?></p>
+                            <small class="error"><?= $errors['login'] ?></small>
                         <?php endif ?>
-                        <label for="login">Login</label><br>
-                        <input type="email" name="login" id="login" placeholder="aaaaa@gmail.com">
+                        <small id="error-login-ins"></small>
                     </div>
                     <div class="ins-form-controller">
+                        <label for="password-ins">Password</label><br>
+                        <input type="password" name="password" id="password-ins" placeholder="......."><br>
+                        <small id="error-password-ins"></small>
                         <?php if (isset($errors['password'])) : ?>
-                            <p class="error"> <?= $errors['password'] ?></p>
+                            <small class="error"><?= $errors['password'] ?></small>
                         <?php endif ?>
-                        <label for="password">Password</label><br>
-                        <input type="password" name="password" id="password" placeholder=".......">
+                    </div>
+                    <div>
                     </div>
                     <div class="ins-form-controller">
+                        <label for="password2-ins">Confirmer Password</label><br>
+                        <input type="password" name="password2" id="password2-ins" placeholder="......."><br>
                         <?php if (isset($errors['password2'])) : ?>
-                            <p class="error"> <?= $errors['password2']?></p>
+                            <small class="error"><?= $errors['password2'] ?></small>
                         <?php endif ?>
-                        <label for="password2">Confirmer Password</label><br>
-                        <input type="password" name="password2" id="password2" placeholder=".......">
+                        <small id="error-password2-ins"></small>
                     </div>
-                    <div></div>
-                    <input type="file" name="avatar" id="avatar" value="Choisir un fichier"><br>
-                    <button>Creer compte</button>
+                    <div class="submit">
+                        <input type="file" name="avatar" id="avatar-ins" value="Choisir un fichier"><br>
+                        <button id="creer-compte-ins">Creer compte</button>
+                    </div>
                 </form>
             </div>
         </div>
         <div class="ins-avatar"></div>
     </div>
-
 </div>
+</div>
+<?php
+require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "footer.inc.html.php");
+?>
