@@ -71,7 +71,8 @@ function register($prenom, $nom, $login, $password, $password2, $avatar = null)
     // echo '<pre>';
     // var_dump($_FILES['avatar']['error']);die;
     // echo '<pre>';
-    if (isset($_FILES["avatar"]) && empty($_FILES["avatar"])) {
+    $chemin='';
+    if (isset($_FILES["avatar"]) && !empty($_FILES["avatar"])) {
         $file_name = $_FILES['avatar']['name'];
         // $file_name=> renommer le ficher pour le rendre unique
         $file_route = ROOT . "public" . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $file_name;
@@ -80,7 +81,7 @@ function register($prenom, $nom, $login, $password, $password2, $avatar = null)
         $extention_autorier = ['.png', '.jpg', 'jpeg', 'gif'];
         if (in_array($ext, $extention_autorier)) {
             if (move_uploaded_file($file_to_save, $file_route)) {
-                //enregistrez dans le fichier json
+                $chemin=$file_route;
                 echo "fichier enregistré avec succés";
             }
         } else {
@@ -113,12 +114,12 @@ function register($prenom, $nom, $login, $password, $password2, $avatar = null)
             'login' => htmlspecialchars($login),
             'password' => htmlspecialchars($password),
             'role' => "ROLE_JOUEUR",
-            'score' => 0
-            // 'avatar'=>"chemin menant vers le fichier"
+            'score' => 0,
+             'avatar'=>$chemin
         ];
         save_data("users", $newUser);
-        connexion($login, $password);
-        // header("location:"."?controller=securite&action=connexion");
+        // connexion($login, $password);
+        header("location:"."?controller=securite&action=connexion");
         exit();
     } else {
         $_SESSION[KEY_ERRORS] = $errors;

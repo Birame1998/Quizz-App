@@ -28,17 +28,16 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: row;
 }
 .ins-contain{
     border: solid whitesmoke;
-    width: 70%;
-    margin-left: 15%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     height: 98%;
     border-radius: 20px;
     background-color: white;
     display: flex;
-    flex-direction: row;
 }
 .ins-text{
     flex: 3;
@@ -49,9 +48,10 @@ body{
     flex: 1;
 }
 .ins-title1{
+    margin: auto;
     opacity: 0.7;
 }
-h3{
+.ins-title2{
     opacity: .4;
 }
 .ins-settings{
@@ -72,15 +72,17 @@ input{
     border-color: grey;
 }
 
+
 input[id="avatar"]{
     margin-left: 20vw;
 }
-button{
+#creer-compte-ins{
     margin-left: 8vw;
     background-color: rgb(91,191,208);
     border-color: rgb(91,191,208);
     color: white;
-    height: 5vh;
+    height: 4vh;
+    border-radius: 8px;
     width: 8vw;
     font-size: 1rem;
 }
@@ -98,23 +100,53 @@ small{
 .invalide{
     border-color: red;
 }
-<<<<<<< HEAD
-/* img[alt="img"]{
+img[alt="img"]{
     width: 100px;
     height: 100px;
-} */
+}
 
-=======
+
 .error{
     text-align: center;
     color: red;
 }
->>>>>>> 524f0c185c6247ced321742cb1345add3edb5c3e
-
-
-
-
 
 .ins-avatar{
     flex: 2;
+    display: flex;
+    align-items: flex-start;
+
+}
+.ins-avatar-profile{
+ display: flex;   
+ width:70%;
+ height:50%;
+ margin-top: 5vh; 
+ border-radius: 50%;  
+ border: 8px solid  rgb(91,191,208);
+}
+
+#avatar-ins{
+    visibility: hidden;
+}
+#choose-file{
+    border: solid 1px;
+    background-color: rgb(91,191,208);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.choose-file{
+    width: 75%;
+}
+#avatar-ins2{
+    cursor: pointer;
+}
+.back-to-connection{
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: rgb(91,191,208);
+    color: white;
+    width: fit-content;
+
 }

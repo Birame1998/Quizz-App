@@ -10,38 +10,37 @@ const smalllogin_ins = document.getElementById("error-login-ins");
 const smallpassword_ins = document.getElementById("error-password-ins");
 const smallpassword2_ins = document.getElementById("error-password2-ins");
 
-
-
 // **************************************************************************************************************************************//
 
 
 
 
+// **************************************************************************************************************************************//
 form_ins.addEventListener ('submit',function(e){
     let count=0;
     if (ChampObligatoir(inputPrenom_ins)) {
         e.preventDefault();
         inputPrenom_ins.className="invalide";
-        showError(inputPrenom_ins,smallprenom_ins,"Veuillez inscrire votre prenom pour vous inscrire");
+        showError(inputPrenom_ins,smallprenom_ins,"Veuillez inscrire votre prenom pour vous inscrire","ins-error");
     }else{
         inputPrenom_ins.className="valide";
     }
     if (ChampObligatoir(inputNom_ins)) {
         e.preventDefault();
         inputNom_ins.className="invalide";
-        showError(inputNom_ins,smallnom_ins,"Veuillez inscrire votre nom pour vous inscrire");
+        showError(inputNom_ins,smallnom_ins,"Veuillez inscrire votre nom pour vous inscrire","ins-error");
     }else{
         inputNom_ins.className="valide";
     }
     if (ChampObligatoir(inputLogin_ins)) {
         e.preventDefault();
         inputLogin_ins.className="invalide";
-        showError(inputLogin_ins,smalllogin_ins,"Un email est requis pour l'inscription");
+        showError(inputLogin_ins,smalllogin_ins,"Un email est requis pour l'inscription","ins-error");
     }else{
         if (!checkEmail(inputLogin_ins)) {
             e.preventDefault();
             inputLogin_ins.className="invalide";
-            showError(inputLogin_ins,smalllogin_ins,"Veuillez entrer un email valide");
+            showError(inputLogin_ins,smalllogin_ins,"Veuillez entrer un email valide","ins-error");
         }else{
             inputLogin_ins.className="valide";
         }
@@ -49,25 +48,25 @@ form_ins.addEventListener ('submit',function(e){
     if (ChampObligatoir(inputPassword_ins)) {
         e.preventDefault();
         inputPassword_ins.className="invalide";
-        showError(inputPassword_ins,smallpassword_ins,"Veuillez inscrire un mot de passe");
+        showError(inputPassword_ins,smallpassword_ins,"Veuillez inscrire un mot de passe","ins-error");
     }else{
         if (!containNumber(inputPassword_ins.value)) {
             e.preventDefault();
             inputPassword_ins.className="invalide";
-            showError(inputPassword_ins, smallpassword_ins,"Le mot de passe doit contenir au moins un nombre");
+            showError(inputPassword_ins, smallpassword_ins,"Le mot de passe doit contenir au moins un nombre","ins-error");
             count++;
           }
       
           if (!containLetter(inputPassword_ins.value)) {
             e.preventDefault();
             inputPassword_ins.className="invalide";
-            showError(inputPassword_ins, smallpassword_ins,"Le mot de passe doit contenir au moins une lettre");
+            showError(inputPassword_ins, smallpassword_ins,"Le mot de passe doit contenir au moins une lettre","ins-error");
             count++
           }
           if (!checkLength(inputPassword_ins)) {
             e.preventDefault();
             inputPassword_ins.className="invalide";
-            showError(inputPassword_ins,smallpassword_ins,"Le mot de passe doit contenir au moins 6 caracteres");
+            showError(inputPassword_ins,smallpassword_ins,"Le mot de passe doit contenir au moins 6 caracteres","ins-error");
             count;
           }
           if (count===0) {
@@ -79,7 +78,7 @@ form_ins.addEventListener ('submit',function(e){
             if (!ChampObligatoir(inputPassword_ins)) {
                 e.preventDefault();
                 inputPassword2_ins.className="invalide";
-                showError(inputPassword2_ins,smallpassword2_ins,"Veuillez confirmer votre mot de passe");
+                showError(inputPassword2_ins,smallpassword2_ins,"Veuillez confirmer votre mot de passe","ins-error");
             }else{
                 inputPassword2_ins.className="invalide";
             }
@@ -89,7 +88,7 @@ form_ins.addEventListener ('submit',function(e){
             if (!confirmPassword(inputPassword_ins,inputPassword2_ins)) {
                 e.preventDefault();
                 inputPassword2_ins.className="invalide";
-                showError(inputPassword2_ins,smallpassword2_ins,"Veuillez inscrire un mot de passe identique");
+                showError(inputPassword2_ins,smallpassword2_ins,"Veuillez inscrire un mot de passe identique","ins-error");
             }else{
             inputPassword_ins.className="valide";
             inputPassword2_ins.className="valide";
