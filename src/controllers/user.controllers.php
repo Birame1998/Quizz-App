@@ -17,6 +17,8 @@ if ($_SERVER["REQUEST_METHOD"]=="GET") {
             require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");          
         }elseif($_GET['action']=="liste.joueurs"){
             lister_joueur();
+       }elseif ($_GET['action']="inscription") {
+           creer_admin();
        }
     }
 }
@@ -26,5 +28,12 @@ function lister_joueur()
     $data=find_users(ROLE_JOUEUR);
     require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."liste.joueurs.html.php");
     $content_for_views=ob_get_clean();
+    require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php"); 
+}
+function creer_admin()
+{
+    ob_start();
+    require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."ins-form.inc.html.php");
+    $content_for_admin_sign_in=ob_get_clean();
     require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php"); 
 }

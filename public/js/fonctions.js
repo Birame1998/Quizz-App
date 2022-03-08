@@ -1,9 +1,9 @@
 function ChampObligatoir(input) {
     return input.value === "";
   }
-  function showError(input, small, message,e) {
+  function showError(input, small, message) {
     const formC = input.parentElement;
-    formC.className = "form-control "+e;
+    // formC.className = "form-control"+e;
     small.innerText = message;
   }
   function containNumber(p) {
@@ -51,4 +51,3 @@ function ChampObligatoir(input) {
 function validPassword(input){
     return(containNumber(input)&& containLetter(input) && checkLength(input));
 }
-  

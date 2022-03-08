@@ -1,7 +1,6 @@
 <?php
 require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
 ?>
-<link rel="stylesheet" href="<?=WEB_ROOT.DIRECTORY_SEPARATOR."css".DIRECTORY_SEPARATOR."accueil.style.css" ?>">
 <div class="acc-contain-main">
    <div class="header-admin">
     <div class="big-title">
@@ -12,7 +11,7 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
         <h1 class="bienvenue">BIENVENUE AU JEU <?=$_SESSION[KEY_USER_CONNECT]["prenom"]?>  <?=$_SESSION[KEY_USER_CONNECT]["nom"]?></h1>    
         <?php endif ?>
     </div>    
-    <div class="deconnexion"><a href="<?=WEB_ROOT."?controller=securite&action=deconnexion"?>"><input type="submit" value="Deconnexion"></a></div>
+    <div class="deconnexion"><a href="<?=WEB_ROOT."?controller=securite&action=deconnexion"?>"><input type="submit" value="Deconnexion" id="disconnect"></a></div>
   </div>
     <div class="acc-main">
         <?php if (is_admin()): ?>
@@ -22,15 +21,18 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."header.inc.html.php");
          <?php
          if ($_GET['action']=="liste.joueurs") {
           echo $content_for_views;
-         } 
+         }elseif($_GET['action']=="inscription"){
+           echo $content_for_admin_sign_in;
+         }
          ?>
          <?php if ($_GET['action']!="accueil"):?>
+          <?php if($_GET['action']=="liste.joueurs"):?>
          <div class="next-prev">
          <button class="previous acc-butt-prev-next">Precedent</button>
          <button class="next acc-butt-prev-next">Suivant</button>
          </div>
-         </div>          
-
+         </div>        
+         <?php endif ?>  
          <?php endif ?>
        </div> 
          

@@ -80,48 +80,33 @@ form{
     background-color: white;
 
 }
-input[type="text"]{
+.conn-login{
     width: 30vw;
     height: 8vh;
     background-color: rgb(240,240,240);
     font-size: 25px;
     border: none;
-}
-input[type="email"]{
-    width: 30vw;
-    height: 8vh;
-    background-color: rgb(240,240,240);
-    font-size: 25px;
-    border: none;
-}
-input[type="password"]{
-    width: 30vw;
-    height: 8vh;
-    background-color: rgb(240,240,240);
-    font-size: 25px;
-    border: none;
-
-}
+}  
 /* .connect-params{
     display: block;
 } */
 .connect_sign-in{
-    margin-top: 8vh;
+    margin-top: 10vh;
     /* border: solid; */
-    height: 12vh;
+    height: 10vh;
 }
 .login{
-width: 38vw;
+width: 35vw;
 /* border: solid; */
 margin-top: 5vh;
 height: 10vh;
 background-color: rgb(240,240,240);
 }
 .password{
-    width: 38vw;
+    width: 35vw;
     /* border: solid; */
     height: 10vh;
-    margin-top: 3vh;
+    margin-top: 7vh;
     background-color: rgb(240,240,240);
 }
 img[alt="img"]{
@@ -163,12 +148,16 @@ p{
 .form-control.error{
     height: 10vh;
     margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
     
 } 
 
 .error-login{
     color: red;
     font-size: 1.6rem;
+    text-align: start;
+    margin-top: 1vh;
     margin-left: 3vw;
     font-style: italic;
     font-display: none;
@@ -177,7 +166,12 @@ p{
 .error-password{
     color: red;
     margin-left: 3vw;
+    text-align: start;
+    margin-top: 1vh;
     font-size: 1.6rem;
     font-style: italic;
     font-display: none;
+}
+#connexion{
+    cursor: pointer;
 }

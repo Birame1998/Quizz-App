@@ -14,12 +14,10 @@ function valid_email(string $key, string $data, array &$errors, string $message 
 }
 function valid_password(string $key, string $data, array &$errors, string $message = "le mot de pass doit contenir au moins 6 caractere ayant des lettre et des chiifres")
 {
-    //   \w	tout caractère de "mot" "#[A-Za-z0-9_]#" plus les accentués
-    // ("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $_POST['email']))
-    // $regex = '#^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9] {6,})#';
-    //$lastpre=(!preg_match("/[a-zA-Z]/",$data) || !preg_match("/[0-9]/", $data) || $data < 6
-    $monregex = '#[a-zA-Z0-9]{6,}.+#';
-    if (!preg_match($monregex, $data) && strlen($data)<6) {
+    $monregex1 = '#[a-z]#';
+    $monregex2 = '#[A-Z]#';
+    $monregex3 = '#[0-9]#';
+    if (!preg_match($monregex1, $data) || !preg_match($monregex2, $data) || !preg_match($monregex3, $data) || strlen($data)<6) {
         $errors[$key] = $message;
     }
 }
