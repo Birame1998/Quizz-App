@@ -6,6 +6,9 @@
 body{
 width: 100vw;
 height: 100vh;
+background:linear-gradient(rgba(5,36,38,0.2),rgba(5,36,38,0.459)),url("../img/img-bg.jpg");
+background-size: cover;
+background-repeat: no-repeat;
 overflow: hidden;
 display: flex;
 flex-direction: column;
@@ -24,19 +27,25 @@ img[alt="img"]{
 .slogan{
     margin-left: 30vw;
 }
+.acc-contain-main{
+    margin: 1vh 2vw ;
+    height: 90vh;
+    background-color: rgb(242,242,242);
+    border-radius: 10px;
+
+}
 .header-admin{
     flex: 1;
+    height: 10vh;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: rgb(81,191,208);
     color: white;
 
 }
 .big-title{
     flex: 9;
-    text-align: center;
-    margin-top: 2vh;
     font-size: 20px;
 }
 
@@ -47,23 +56,28 @@ img[alt="img"]{
 input[value="Deconnexion"]{
     padding: 1vh;
     width: 8vw;
-    margin-top: 3vh;
+    margin-right: 2vw;
     background-color: rgb(57,221,214);
     border-color: rgb(57,221,214);
     color: white;
     font-size: 1rem;
 }
-.main{
+.acc-main{
     flex: 9;
     display: flex;
     flex-direction: row;
+    height: 90%;
 }
 .taches-admin{
-    margin-top: 5vh;
     flex:3;
     display: flex;
     flex-direction: column;
-
+    height: 80%;
+    margin-left: 1%;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px white;
+    background-color: white;
 }
 .avatar{
     flex:3;
@@ -71,6 +85,8 @@ input[value="Deconnexion"]{
     flex-direction: row;
     background-image: linear-gradient(120deg,white 10%,rgb(93,195,210) 80%);
     color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .admin-profile{
     flex: 6;
@@ -86,10 +102,21 @@ input[value="Deconnexion"]{
     margin-top: 1vh;
     margin-right: 0.5vw;
 }
-label{
+.m-link{
 color: gray;
 font-size: 1.3rem;
 margin-left: 5vh;
+list-style: none;
+cursor: pointer;
+}
+
+.taches div:hover{
+    background-color: rgb(248, 243, 240);
+    display: flex;
+    align-items: center;
+}
+.taches div li:hover{
+    border-left: 5px solid green;
 }
 .taches{
     flex: 7;
@@ -108,7 +135,7 @@ margin-left: 5vh;
     background-repeat: no-repeat;
     cursor: pointer;
 }
-label{
+.m-link{
     flex:9;
 }
 .creer-admin{
@@ -159,7 +186,10 @@ a{
 .contain-view{
     flex: 7;
     text-align: center;
-    margin-top: 5vh;
+    background-color: white;
+    height: 92%;
+    margin: 2% 3%;
+    border-radius: 15px;
 }
 .img5{
     flex:1;
@@ -170,40 +200,44 @@ a{
     cursor: pointer;   
 }
 table{
-    margin-left: 20vw;
+    margin-left: 5vw;
     width: 30vw;
     border: solid rgb(81,191,208);
     margin-top: 5vh;
     border-radius: 20px;
 }
 tr{
-    height: 5vh;
+    height: 4vh;
     font-size: 1.5rem;
     color: gray;
 
 }
 .listedesjoueurs{
     font-size: 2.3rem;
-    color: rgb(112, 110, 110);
+    margin-top: 2Vh;
+    color: rgb(142, 132, 117);
     font-style: italic;
 }
 .next-prev{
     display: flex;
-    margin-top: 2vh;
+    margin: auto;
     width: 30vw;
-    margin-left: 20vw;
     justify-content: space-between;
 }
-button{
+.acc-butt-prev-next{
     height: 5vh;
     width: 7vw;
-    margin-top: 1vh;
-    background-color: rgb(81,191,208);
-    border-color: rgb(81,191,208);
+    margin-top: 2vh;
+    border-radius: 10px;
+    background-color: rgb(57,221,214);
+    border: none;
     font-size: 1em;
     color: white;
-}
+
+    }
 .previous{
     visibility: hidden;
 }
-
+.player-list{
+    width: 40vw;
+}

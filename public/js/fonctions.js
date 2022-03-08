@@ -1,9 +1,9 @@
 function ChampObligatoir(input) {
     return input.value === "";
   }
-  function showError(input, small, message) {
+  function showError(input, small, message,e) {
     const formC = input.parentElement;
-    formC.className = "form-control error";
+    formC.className = "form-control "+e;
     small.innerText = message;
   }
   function containNumber(p) {

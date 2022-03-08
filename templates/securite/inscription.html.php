@@ -5,12 +5,12 @@ if (isset($_SESSION[KEY_ERRORS])) {
 }
 require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php");
 ?>
-<div class="main">
+<div class="main">    
     <div class="ins-contain">
         <div class="ins-text">
             <div class="ins-titles">
                 <h1 class="ins-title1">S'INSCRIRE</h1>
-                <h3>Pour tester votre niveau de culture générale</h3>
+                <h3 class="ins-title2">Pour tester votre niveau de culture générale</h3>
                 <hr>
             </div>
             <div class="ins-settings">
@@ -35,7 +35,7 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                     </div>
                     <div class="ins-form-controller">
                         <label for="login-ins">Login</label><br>
-                        <input type="text" name="login" id="login-ins" placeholder="aaaaa@gmail.com"><br>
+                        <input type="email" name="login" id="login-ins" placeholder="aaaaa@gmail.com"><br>
                         <?php if (isset($errors['login'])) : ?>
                             <small class="error"><?= $errors['login'] ?></small>
                         <?php endif ?>
@@ -60,13 +60,22 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                         <small id="error-password2-ins"></small>
                     </div>
                     <div class="submit">
-                        <input type="file" name="avatar" id="avatar-ins" value="Choisir un fichier"><br>
+                        <div class="choose-file">
+                            <label for="avatar-ins" id="avatar-ins2" class="avatar-ins">Avatar</label>
+                            <input type="file" name="avatar" id="avatar-ins" class="avatar-ins" value="Choisir un fichier">
+                            <label for="avatar-ins" id="choose-file">
+                                Choisir un fichier
+                            </label>
+                        </div>
                         <button id="creer-compte-ins">Creer compte</button>
                     </div>
                 </form>
             </div>
+            <a href="<?=WEB_ROOT."?controller=securite&action=connexion"?>" class="back-to-connection">Vous avez deja un compte ? Connectez vous ici</a>
         </div>
-        <div class="ins-avatar"></div>
+        <div class="ins-avatar">
+                <!-- <img  class="ins-avatar-profile" src="<?=WEB_ROOT."uploads".DIRECTORY_SEPARATOR."1.jpg"?>" alt="photo de profil"> -->
+        </div>
     </div>
 </div>
 </div>

@@ -1,6 +1,5 @@
 <?php
 require_once(PATH_SRC . "models" . DIRECTORY_SEPARATOR . "user.models.php");
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // die("c'est bon !!!!!!!!!!!!! security controller");
     if (isset($_POST['action'])) {
@@ -71,7 +70,8 @@ function register($prenom, $nom, $login, $password, $password2, $avatar = null)
     // echo '<pre>';
     // var_dump($_FILES['avatar']['error']);die;
     // echo '<pre>';
-    if (isset($_FILES["avatar"]) && !empty($_FILES["avatar"])) {
+    $chemin='';
+    if (isset($_FILES[  "avatar"]) && !empty($_FILES["avatar"])) {
         $file_name = $_FILES['avatar']['name'];
         // $file_name=> renommer le ficher pour le rendre unique
         $file_route = ROOT . "public" . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $file_name;
@@ -80,16 +80,12 @@ function register($prenom, $nom, $login, $password, $password2, $avatar = null)
         $extention_autorier = ['.png', '.jpg', 'jpeg', 'gif'];
         if (in_array($ext, $extention_autorier)) {
             if (move_uploaded_file($file_to_save, $file_route)) {
-                //enregistrez dans le fichier json
-                
-                echo "fichier enregistré avec succés";
+                $chemin=$file_route;
             }
         } else {
             die("choisseez une photo au bon format");
         }
     }
-
-
         /** traitement de sans l'avatar */
     $errors = [];
     champ_obligatoire('prenom', $prenom, $errors, "Veuillez entrer votre prenom");
@@ -105,17 +101,17 @@ function register($prenom, $nom, $login, $password, $password2, $avatar = null)
     }
     confirm_password($password, $password2, 'password2', $errors);
     login_existe($login, 'login', $errors);
-
-    $password = password_hash($password, PASSWORD_DEFAULT);
+    $password=htmlspecialchars($password);
+    $password_hash = password_hash($password, PASSWORD_DEFAULT);
     if (count($errors) == 0) {
         $newUser = [
             'prenom' => htmlspecialchars($prenom),
             'nom' => htmlspecialchars($nom),
             'login' => htmlspecialchars($login),
-            'password' => htmlspecialchars($password),
+            'password' => $password_hash,
             'role' => "ROLE_JOUEUR",
-            'score' => 0
-            // 'avatar'=>"chemin menant vers le fichier"
+            'score' => 0,
+            'avatar'=>$chemin
         ];
         save_data("users", $newUser);
         connexion($login, $password);

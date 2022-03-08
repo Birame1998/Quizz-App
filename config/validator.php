@@ -18,7 +18,7 @@ function valid_password(string $key, string $data, array &$errors, string $messa
     // ("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $_POST['email']))
     // $regex = '#^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9] {6,})#';
     //$lastpre=(!preg_match("/[a-zA-Z]/",$data) || !preg_match("/[0-9]/", $data) || $data < 6
-    $monregex = '#[a-zA-Z0-9]{5,}.+#';
+    $monregex = '#[a-zA-Z0-9]{6,}.+#';
     if (!preg_match($monregex, $data) && strlen($data)<6) {
         $errors[$key] = $message;
     }
@@ -43,3 +43,12 @@ function login_existe($login, $key, array &$errors, string $message = "ce login 
         return $errors[$key] = $message;
     }
 }
+function image_valide(array &$error,$key,$message="choisseez une photo au bon format")
+{
+    $file_name = $_FILES['avatar']['name'];
+    
+}
+
+
+
+

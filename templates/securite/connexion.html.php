@@ -9,7 +9,7 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
         <div class="form-contain">
             <div class="header-form">
                 <h2>Login form</h2>
-                <span>x</span>
+                <div class="croix"></div>
             </div>
             <form action="<?= WEB_ROOT?>" id="form" method="POST">
                 <input type="hidden" name="action" value="connexion">
@@ -21,10 +21,10 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                 <div class="form-control error">
                     <div class="login">
                         <input type="text" name="login" placeholder="Login" id="login">
+                        <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-login.png" ?>" alt="login-icon">
                         <?php if (isset($errors['login'])) : ?>
                             <p style="color:red"><?= $errors['login'] ?></p>
                         <?php endif ?>
-                        <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-login.png" ?>" alt="login-icon">
                     </div>
                 </div>    
                 <small id="error-login" class="error-login"></small>

@@ -17,6 +17,14 @@
       "score": 130
     },
     {
+        "nom": "Balde",
+        "prenom": "Mamadou Lamarana",
+        "login": "joueur@gmail.com",
+        "password": "joueur2",
+        "role": "ROLE_JOUEUR",
+        "score": 130
+      },
+    {
       "nom": "Kebe",
       "prenom": "Malick",
       "login": "joueur3@gmail.com",
@@ -25,34 +33,10 @@
       "score": 60
     },
     {
-      "nom": "Barry",
-      "prenom": "Oumar",
-      "login": "joueur4@gmail.com",
-      "password": "joueur4",
-      "role": "ROLE_JOUEUR",
-      "score": 180
-    },
-    {
-      "nom": "Sall",
-      "prenom": "Cheikh",
-      "login": "joueur5@gmail.com",
-      "password": "joueur",
-      "role": "ROLE_JOUEUR",
-      "score": 10
-    },
-    {
-      "nom": "Diop",
-      "prenom": "Abdou",
-      "login": "joueur6@gmail.com",
-      "password": "joueur6",
-      "role": "ROLE_JOUEUR",
-      "score": 50
-    },
-    {
       "nom": "Diouf",
       "prenom": "Birame Moussa",
       "login": "admin@gmail.com",
-      "password": "admin",
+      "password": "admin1",
       "role": "ROLE_ADMIN",
       "score": 0
     },
@@ -61,22 +45,6 @@
       "nom": "Niass",
       "login": "joueur@gmail.com",
       "password": "passer",
-      "role": "ROLE_JOUEUR",
-      "score": 0
-    },
-    {
-      "prenom": "Khadim",
-      "nom": "Niass",
-      "login": "admin@gmail.com",
-      "password": "admin2",
-      "role": "ROLE_JOUEUR",
-      "score": 0
-    },
-    {
-      "prenom": "BIRAM MOUSSA",
-      "nom": "DIOUF",
-      "login": "biram@moussa.diouf",
-      "password": "biram1",
       "role": "ROLE_JOUEUR",
       "score": 0
     },
@@ -99,62 +67,6 @@
     {
       "prenom": "Khadim",
       "nom": "Niass",
-      "login": "admin@gmail.admin",
-      "password": "$2y$10$IObknDG46B/NazgtWPPUPOBLvur5Q3LN61hfEEVC8F0ugSSafk7uO",
-      "role": "ROLE_JOUEUR",
-      "score": 0
-    },
-    {
-      "prenom": "Khadim",
-      "nom": "Niass",
-      "login": "admin@admin.admin",
-      "password": "$2y$10$PeKYKBmHCuZxYfwQeljDv.AouSRT8t9E94ZkrJoYSPt.sYaxNL7VO",
-      "role": "ROLE_JOUEUR",
-      "score": 0
-    },
-    {
-      "prenom": "crypt",
-      "nom": "crypt",
-      "login": "crypt@gmail.com",
-      "password": "$2y$10$s5BWcbYnSGA1KRuLs7IPjek5Nsxm32ndh/61lts20nPLyxXKeTPuW",
-      "role": "ROLE_JOUEUR",
-      "score": 0
-    },
-    {
-      "prenom": "fallou",
-      "nom": "gueye",
-      "login": "fallou@gmail.com",
-      "password": "$2y$10$9Ohr.11J73hdDSr56/IO8umje81T2/KgZp6bh7y6BGv5zH2ZXftPy",
-      "role": "ROLE_JOUEUR",
-      "score": 0
-    },
-    {
-      "prenom": "fallou",
-      "nom": "gueye",
-      "login": "gueuye@gmail.com",
-      "password": "$2y$10$BB603jS6EHqx4BbOsSVJweZ3CiM0G9XjyJ292LoyuC0snybu6suci",
-      "role": "ROLE_JOUEUR",
-      "score": 0
-    },
-    {
-      "prenom": "BIRAM MOUSSA",
-      "nom": "diouf",
-      "login": "moussa@gmail.com",
-      "password": "$2y$10$0KU2vgw0k9LwMMIADwWgq.roUnBgSQlTZAuqcPaKLwvidG/EoQXcu",
-      "role": "ROLE_JOUEUR",
-      "score": 0
-    },
-    {
-      "prenom": "khadim",
-      "nom": "Niass",
-      "login": "khadim@niass.com",
-      "password": "$2y$10$MC9ao0vPQzMT4QCdzhaB7Ou970yNM98nCybcU6EKv.4WpqhS5XSpC",
-      "role": "ROLE_JOUEUR",
-      "score": 0
-    },
-    {
-      "prenom": "Khadim",
-      "nom": "Niass",
       "login": "joueur12@gmail.com",
       "password": "$2y$10$OHLJYK.7z5uRZ7ZePLh6D.ZJnixqEXUYXv2Hq66XLpiM7nS0EHmHG",
       "role": "ROLE_JOUEUR",
@@ -167,6 +79,73 @@
       "password": "$2y$10$gDUVhJRCvNkON55wMkvlZuXxCKNaWdBr7bcB7FOS9UYAfb/L/p2Bi",
       "role": "ROLE_JOUEUR",
       "score": 0
+    },
+    {
+      "prenom": "dame",
+      "nom": "samb",
+      "login": "dame@samb.com",
+      "password": "$2y$10$EzgmlJui2xhYOMW5bHQYYeQUDfH6eFV41q1Vet/muOmbSo4XGZgLe",
+      "role": "ROLE_JOUEUR",
+      "score": 0
+    },
+    {
+      "prenom": "Dame ",
+      "nom": "Samb",
+      "login": "damebeninois@gmail.com",
+      "password": "$2y$10$mfsT.QQTjbKo2wzqM.GBPOBQ4n4qTaka7OADZb6yL9BnaGuhVVU2.",
+      "role": "ROLE_JOUEUR",
+      "score": 0
+    },
+    {
+      "prenom": "Mbaye ",
+      "nom": "Lo",
+      "login": "mbayelo@gmail.com",
+      "password": "$2y$10$lG7ao4BNyaKjcAdswjGDruP//8XZVFS7p0GwDvsWOaDnEzVxU8GQu",
+      "role": "ROLE_JOUEUR",
+      "score": 0
+    },
+    {
+      "prenom": "Jean",
+      "nom": "Mendy",
+      "login": "jeanmendy@gmail.com",
+      "password": "$2y$10$6aK0E/LofBps6VMSFOyySOybiGVvgX6b18vKytGtPf902Od5UvwoC",
+      "role": "ROLE_ADMIN",
+      "score": 0
+    },
+    {
+      "prenom": "damr ",
+      "nom": "samb",
+      "login": "dam@samb.com",
+      "password": "$2y$10$7W4xwMvf7bH.VO0bxuaoGO2XW6KijrvWAMsl1dxO7KUT.gMovB7ci",
+      "role": "ROLE_JOUEUR",
+      "score": 0
+    },
+    {
+      "prenom": "tening",
+      "nom": "ngome",
+      "login": "tening@gmail.com",
+      "password": "$2y$10$A78giB/MX5n.qORMubwbhOTJOUAQmz/I0yRMWbyxb.PDDxLT/jOj6",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": "/opt/lampp/htdocs/quizzApp/public/uploads/Steve_Jobs_Headshot_2010-CROP.jpg"
+    },
+    {
+      "prenom": "adma",
+      "nom": "ndiaye",
+      "login": "adama@ndiaye.com",
+      "password": "$2y$10$405QMQ0ZX9WW/vW9fu3Kf.YdOKu9RRedJtTt6EwvNYAa1rliDoBGq",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": "/opt/lampp/htdocs/quizzApp/public/uploads/Rectangle 48BG Slide (1).png"
+    },
+    {
+      "prenom": "oumy",
+      "nom": "niadiaye",
+      "login": "oumy@ndiaye.com",
+      "password": "$2y$10$ah.6XUdW5RnMIpYYjarhY.NDsegJGeQ9rn93s7FBKrjCNVqALp8A.",
+      "role": "ROLE_JOUEUR",
+      "score": 0,
+      "avatar": ""
     }
   ]
 }

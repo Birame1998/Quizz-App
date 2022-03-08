@@ -13,5 +13,6 @@ function save_data(string $key,array $data)
     $data_decoded=json_decode($data_json,true); //traduire en array
     $data_decoded[$key][]=$data;
     $final=json_encode($data_decoded,false);
+    // var_dump($final);die;
     file_put_contents(PATH_DB,$final); 
 }

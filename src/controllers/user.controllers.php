@@ -21,10 +21,17 @@ if ($_SERVER["REQUEST_METHOD"]=="GET") {
     }
 }
 function lister_joueur()
-{ 
+{
     ob_start();
     $data=find_users(ROLE_JOUEUR);
     require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."liste.joueurs.html.php");
     $content_for_views=ob_get_clean();
     require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php"); 
+}
+function paginateur(){
+    $nbre_element_par_page=5;
+    $nombre_joueurs=find_users(ROLE_JOUEUR);
+    $a=$nbre_element_par_page/$nombre_joueurs;
+    $bombre_pages=ceil($a);
+    echo $a;
 }
