@@ -6,6 +6,9 @@
 button{
     cursor: pointer;
 }
+input:focus{
+    outline: none;
+}
 body{
 width: 100vw;
 height: 100vh;

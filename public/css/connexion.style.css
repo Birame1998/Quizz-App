@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 body{
     width:99vw;
     height: 100vh;
@@ -174,4 +175,11 @@ p{
 }
 #connexion{
     cursor: pointer;
+}
+#password{
+    border: none;
+    background-color: rgb(240,240,240);
+    width: 30vw;
+    height: 8vh;
+    font-size: 1.5rem;
 }

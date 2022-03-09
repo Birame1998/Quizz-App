@@ -11,7 +11,7 @@ const smallpassword = document.getElementById("error-password");
 form.addEventListener("submit", function (e) {
   if (ChampObligatoir(inputLogin)) {
     e.preventDefault();
-    showError(inputLogin, smalllogin, "le login est obligatoire front",);
+    showError(inputLogin, smalllogin, "le login est obligatoire");
   }else{
     if (! checkEmail(inputLogin)) {
       e.preventDefault();

@@ -1,7 +1,11 @@
 <div class="ins-text">
             <div class="ins-titles">
                 <h1 class="ins-title1">S'INSCRIRE</h1>
+                <?php if(is_connect()):?>
+                <h3 class="ins-title2">Pour proposer des quizz</h3>
+                <?php else: ?>
                 <h3 class="ins-title2">Pour tester votre niveau de culture générale</h3>
+                <?php endif ?>
                 <hr>
             </div>
             <div class="ins-settings">
@@ -78,5 +82,9 @@
             <?php endif ?>  
         </div>
         <div class="ins-avatar">
+            <label for="avatar-ins" class="lab-avatar-ins"><div><span>Cliquez ici pour choisir une image</span></div></label>
+            <?php if (isset($errors['avatar'])) : ?>
+                <small><?= $errors['avatar']?> </small>
+            <?php endif ?>
                 <!-- <img  class="ins-avatar-profile" src="<?=WEB_ROOT."uploads".DIRECTORY_SEPARATOR."1.jpg"?>" alt="photo de profil"> -->
         </div>

@@ -27,23 +27,23 @@
                         <option value="">4</option>
                     </select>
                     <a href="">
-                        <img src="<?= WEB_ROOT . "img/" . "ic-ajout-réponse.png" ?>" alt="">
+                        <img src="<?= WEB_ROOT . "img/" . "ic-ajout-réponse.png" ?>" alt="ajout-reponse">
                     </a>
                 </div>
 
                 <div class="cr-form-controller">
                     <label for="">Réponse 1</label>
-                    <input type="text">
-                    <input type="checkbox" name="" id="">
-                    <input type="radio" name="" id="">
+                    <input type="text" id="cr-txt">
+                    <input type="checkbox" name="" id="cr-check">
+                    <input type="radio" name="" id="cr-rad">
                     <a href="">
-                        <img src="<?= WEB_ROOT . "img/" . "ic-supprimer.png" ?>" alt="">
+                        <img src="<?= WEB_ROOT . "img/" . "ic-supprimer.png" ?>" alt="btn-delete">
                     </a>
                 </div>
                 <div class="cr-contain-btn">
                     <button>Enregistrer</button>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </div>

@@ -6,12 +6,11 @@
   color: rgb(57, 221, 214);
 }
 .cr-header h1 {
-  border: 1px solid red;
   margin-left: 0;
 }
 .cr-contain-question {
   border: 1px solid rgb(57, 221, 214);
-  border-radius: 10px;
+  border-radius: 20px;
   height: 85%;
   margin: 2%;
 }
@@ -19,8 +18,6 @@
   display: flex;
   min-height: 15%;
   width: 95%;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: inherit;
 }
 .cr-Question {
@@ -34,39 +31,80 @@
   box-shadow: 1px 1px rgb(57, 221, 214);
 }
 .cr-head-blanc-space textarea {
-  background-color: rgba(228, 227, 227, 0.931);
-  width: 100%;
-  height: 100%;
+  background-color: rgb(247, 247, 247);
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-width: 100%;
 }
 #cr-question-form {
   flex-direction: column;
 }
 #cr-question-form input {
-  box-shadow: 1px 1px rgb(57, 221, 214);
+  background-color: rgb(247, 247, 247);
 }
 #cr-question-form select {
   box-shadow: 1px 1px rgb(57, 221, 214);
-  width: 75px;
+  background-color: rgb(247, 247, 247);
+  width: 20vw;
+  height: 5vh;
+  margin-left: 3%;
+
   min-height: 30px;
 }
 .cr-contain-form {
   display: flex;
+  margin-top: 2vh;
+  margin-left: 4%;
   flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid black;
+  justify-content: start;
+  /* border: 1px solid black; */
   height: 85%;
 }
 .cr-contain-btn {
   display: flex;
   justify-content: flex-end;
 }
-.cr-contain-form button {
+.cr-contain-btn button {
   height: 4.5vh;
   width: 10vw;
-  margin: 2%;
   background-color: rgb(57, 221, 214);
   border: none;
+  margin-top: 20vh;
+  margin-right: 2vh;
   border-radius: 5px;
   color: #fff;
   font-size: 1.3rem;
+}
+#cr-point{
+  background-color: rgb(247, 247, 247);
+  width: 5vw;
+  height: 4vh;
+  margin-left: 3%;
+}
+input[id="cr-txt"]{
+width: 20vw;
+height: 5vh;
+margin-left: 3%;
+
+}
+input[id="cr-check"]{
+  height: 3vh;
+  width: 3vw;
+  align-self: center;
+
+}
+input[id="cr-rad"]{
+  height: 3vh;
+  width: 3vw;
+  align-self: center;
+}
+.cr-form-controller{
+  display: flex;
+  margin-top: 2%;
+  align-items: center;
+}
+img[alt="ajout-reponse"]{
+  height: 5vh;
+  width: 3vw;
 }

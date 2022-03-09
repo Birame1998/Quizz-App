@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             logout();
         } elseif ($_GET['action'] == "inscription") {
             require_once(PATH_VIEWS . "securite" . DIRECTORY_SEPARATOR . "inscription.html.php");
-        } 
+        }
         // elseif ($_GET['action'] == "creerquestion") {
         //     require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "creer-question.html.php");
         // }
@@ -69,28 +69,30 @@ function logout()
 
 function register($prenom, $nom, $login, $password, $password2, $role)
 {
+    $errors = [];
     /**traitememt de l'enregistrement de l'avatar */
     // echo '<pre>';
-    // var_dump($_FILES['avatar']['error']);die;
+    // var_dump($_FILES);die;
     // echo '<pre>';
     $chemin = '';
-    if (isset($_FILES["avatar"]) && empty($_FILES["avatar"])) {
+    if (isset($_FILES["avatar"]) && !empty($_FILES["avatar"])) {
         $file_name = $_FILES['avatar']['name'];
         $ext = strrchr($file_name, '.');
         $file_to_save = $_FILES['avatar']['tmp_name'];
         $extention_autorier = ['.png', '.jpg', '.jpeg', '.gif'];
         $file_name = $login . $ext;
         $file_route = ROOT . "public" . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $file_name;
+
         if (in_array($ext, $extention_autorier)) {
             if (move_uploaded_file($file_to_save, $file_route)) {
-                $chemin = $file_route;
+                $chemin = $file_name;
             }
         } else {
-            ("choisseez une photo au bon format");
+            $errors['avatar'] = "choisseez une photo au bon format";
         }
     }
+    // die("after testing");
     /** traitement de sans l'avatar */
-    $errors = [];
     champ_obligatoire('prenom', $prenom, $errors, "Veuillez entrer votre prenom");
     // die('sur la page de registration');
     champ_obligatoire('nom', $nom, $errors, "Veuillez entrer votre nom");
@@ -127,7 +129,16 @@ function register($prenom, $nom, $login, $password, $password2, $role)
         exit();
     } else {
         $_SESSION[KEY_ERRORS] = $errors;
-        header("location:" . "?controller=securite&action=inscription");
+        if (is_admin()) {
+            header("location:" . "?controller=user&action=inscription");
+        } else {
+            header("location:" . "?controller=securite&action=inscription");
+        }
         exit();
     }
+
+    echo "<pre>";
+    var_dump($_POST);
+    echo "<pre>";
+    die;
 }
