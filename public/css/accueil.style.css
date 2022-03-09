@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+button{
+    cursor: pointer;
+}
 body{
 width: 100vw;
 height: 100vh;
@@ -135,18 +138,17 @@ cursor: pointer;
     background-repeat: no-repeat;
     cursor: pointer;
 }
-.m-link{
+.acc-link{ 
     flex:9;
+    text-decoration: none;
+
 }
 .creer-admin{
     height: 5vh;
     display: flex;
     justify-content: space-between;
 }
-a{
-    flex: 9;
-    text-decoration: none;
-}
+
 .img3{
     flex:1;
     height: 5vh;
@@ -185,12 +187,18 @@ a{
 }
 .contain-view{
     flex: 7;
+    margin-left: 2%;
     text-align: center;
     background-color: white;
-    height: 92%;
-    margin: 2% 3%;
+    height: 90%;
+    display: flex;
+    /* margin: 2% 3%; */
     border-radius: 15px;
 }
+.ins-text{
+    height: 80%;
+}
+
 .img5{
     flex:1;
     height: 5vh;
@@ -240,4 +248,7 @@ tr{
 }
 .player-list{
     width: 40vw;
+}
+#disconnect{
+    cursor: pointer;
 }

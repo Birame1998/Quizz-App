@@ -1,0 +1,72 @@
+.cr-contain-create {
+  border: 1px solid black;
+  width: 100%;
+}
+.cr-header {
+  color: rgb(57, 221, 214);
+}
+.cr-header h1 {
+  border: 1px solid red;
+  margin-left: 0;
+}
+.cr-contain-question {
+  border: 1px solid rgb(57, 221, 214);
+  border-radius: 10px;
+  height: 85%;
+  margin: 2%;
+}
+.cr-head-quest {
+  display: flex;
+  min-height: 15%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: inherit;
+}
+.cr-Question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+}
+.cr-head-blanc-space {
+  flex: 6;
+  box-shadow: 1px 1px rgb(57, 221, 214);
+}
+.cr-head-blanc-space textarea {
+  background-color: rgba(228, 227, 227, 0.931);
+  width: 100%;
+  height: 100%;
+}
+#cr-question-form {
+  flex-direction: column;
+}
+#cr-question-form input {
+  box-shadow: 1px 1px rgb(57, 221, 214);
+}
+#cr-question-form select {
+  box-shadow: 1px 1px rgb(57, 221, 214);
+  width: 75px;
+  min-height: 30px;
+}
+.cr-contain-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  height: 85%;
+}
+.cr-contain-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.cr-contain-form button {
+  height: 4.5vh;
+  width: 10vw;
+  margin: 2%;
+  background-color: rgb(57, 221, 214);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.3rem;
+}

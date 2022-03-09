@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             //inscription
         } elseif (isset($_POST['action']) == 'inscription') {
             extract($_POST);
-            register($prenom, $nom, $login, $password, $password2);
+            register($prenom, $nom, $login, $password, $password2, $role);
         }
     }
 }
@@ -24,7 +24,10 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             logout();
         } elseif ($_GET['action'] == "inscription") {
             require_once(PATH_VIEWS . "securite" . DIRECTORY_SEPARATOR . "inscription.html.php");
-        }
+        } 
+        // elseif ($_GET['action'] == "creerquestion") {
+        //     require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "creer-question.html.php");
+        // }
     } else {
         require_once(PATH_VIEWS . "securite" . DIRECTORY_SEPARATOR . "connexion.html.php");
     }
@@ -64,29 +67,29 @@ function logout()
     exit();
 }
 
-function register($prenom, $nom, $login, $password, $password2, $avatar = null)
+function register($prenom, $nom, $login, $password, $password2, $role)
 {
     /**traitememt de l'enregistrement de l'avatar */
     // echo '<pre>';
     // var_dump($_FILES['avatar']['error']);die;
     // echo '<pre>';
-    $chemin='';
-    if (isset($_FILES[  "avatar"]) && !empty($_FILES["avatar"])) {
+    $chemin = '';
+    if (isset($_FILES["avatar"]) && empty($_FILES["avatar"])) {
         $file_name = $_FILES['avatar']['name'];
-        // $file_name=> renommer le ficher pour le rendre unique
-        $file_route = ROOT . "public" . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $file_name;
         $ext = strrchr($file_name, '.');
         $file_to_save = $_FILES['avatar']['tmp_name'];
-        $extention_autorier = ['.png', '.jpg', 'jpeg', 'gif'];
+        $extention_autorier = ['.png', '.jpg', '.jpeg', '.gif'];
+        $file_name = $login . $ext;
+        $file_route = ROOT . "public" . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $file_name;
         if (in_array($ext, $extention_autorier)) {
             if (move_uploaded_file($file_to_save, $file_route)) {
-                $chemin=$file_route;
+                $chemin = $file_route;
             }
         } else {
-            die("choisseez une photo au bon format");
+            ("choisseez une photo au bon format");
         }
     }
-        /** traitement de sans l'avatar */
+    /** traitement de sans l'avatar */
     $errors = [];
     champ_obligatoire('prenom', $prenom, $errors, "Veuillez entrer votre prenom");
     // die('sur la page de registration');
@@ -101,21 +104,26 @@ function register($prenom, $nom, $login, $password, $password2, $avatar = null)
     }
     confirm_password($password, $password2, 'password2', $errors);
     login_existe($login, 'login', $errors);
-    $password=htmlspecialchars($password);
-    $password_hash = password_hash($password, PASSWORD_DEFAULT);
+
+    $password_hashed = password_hash($password, PASSWORD_DEFAULT);
+
     if (count($errors) == 0) {
         $newUser = [
             'prenom' => htmlspecialchars($prenom),
             'nom' => htmlspecialchars($nom),
             'login' => htmlspecialchars($login),
-            'password' => $password_hash,
-            'role' => "ROLE_JOUEUR",
+            'password' => htmlspecialchars($password_hashed),
+            'role' => $role,
             'score' => 0,
-            'avatar'=>$chemin
+            'avatar' => $chemin
         ];
         save_data("users", $newUser);
-        connexion($login, $password);
-        // header("location:"."?controller=securite&action=connexion");
+        if (!is_admin()) {
+            connexion($login, $password);
+            // header("location:" . "?controller=securite&action=connexion");
+        } else {
+            header("location:" . "?controller=user&action=accueil");
+        }
         exit();
     } else {
         $_SESSION[KEY_ERRORS] = $errors;

@@ -17,6 +17,10 @@ if ($_SERVER["REQUEST_METHOD"]=="GET") {
             require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php");          
         }elseif($_GET['action']=="liste.joueurs"){
             lister_joueur();
+       }elseif ($_GET['action']=="inscription") {
+           creer_admin();
+        }elseif($_GET['action']=="creerquestion"){
+            creer_question();
        }
     }
 }
@@ -28,10 +32,17 @@ function lister_joueur()
     $content_for_views=ob_get_clean();
     require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php"); 
 }
-function paginateur(){
-    $nbre_element_par_page=5;
-    $nombre_joueurs=find_users(ROLE_JOUEUR);
-    $a=$nbre_element_par_page/$nombre_joueurs;
-    $bombre_pages=ceil($a);
-    echo $a;
+function creer_admin()
+{
+    ob_start();
+    require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."ins-form.inc.html.php");
+    $content_for_admin_sign_in=ob_get_clean();
+    require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php"); 
+}
+function creer_question()
+{
+    ob_start();
+    require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."creer-question.html.php");
+    $content_for_question=ob_get_clean();
+    require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueil.html.php"); 
 }

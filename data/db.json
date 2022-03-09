@@ -17,14 +17,6 @@
       "score": 130
     },
     {
-        "nom": "Balde",
-        "prenom": "Mamadou Lamarana",
-        "login": "joueur@gmail.com",
-        "password": "joueur2",
-        "role": "ROLE_JOUEUR",
-        "score": 130
-      },
-    {
       "nom": "Kebe",
       "prenom": "Malick",
       "login": "joueur3@gmail.com",
@@ -127,7 +119,7 @@
       "password": "$2y$10$A78giB/MX5n.qORMubwbhOTJOUAQmz/I0yRMWbyxb.PDDxLT/jOj6",
       "role": "ROLE_ADMIN",
       "score": 0,
-      "avatar": "/opt/lampp/htdocs/quizzApp/public/uploads/Steve_Jobs_Headshot_2010-CROP.jpg"
+      "avatar": "Steve_Jobs_Headshot_2010-CROP.jpg"
     },
     {
       "prenom": "adma",
@@ -139,13 +131,112 @@
       "avatar": "/opt/lampp/htdocs/quizzApp/public/uploads/Rectangle 48BG Slide (1).png"
     },
     {
-      "prenom": "oumy",
-      "nom": "niadiaye",
-      "login": "oumy@ndiaye.com",
-      "password": "$2y$10$ah.6XUdW5RnMIpYYjarhY.NDsegJGeQ9rn93s7FBKrjCNVqALp8A.",
+      "prenom": "Ahmed Dame",
+      "nom": "Samb",
+      "login": "samb@gmail.com",
+      "password": "$2y$10$D4oX4ow/BPo7RFQOLMDy3OBeGcInE2Kn.nuEySteZ1tUKHYb9OCwu",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": ""
+    },
+    {
+      "prenom": "cheikh moustrpha",
+      "nom": "der",
+      "login": "der@login.com",
+      "password": "$2y$10$4IsZtYsC7Ej2rxRraDUqseWVpGra9rOQEs0XZz8Gt2EEuoymu6FTO",
       "role": "ROLE_JOUEUR",
       "score": 0,
       "avatar": ""
+    },
+    {
+      "prenom": "azert",
+      "nom": "azert",
+      "login": "azert@azert.com",
+      "password": "$2y$10$gftbO79a9kmxbtGQ4p5DsOLSgBGHK/Y0DcFhRBFJIZ9hAe2Q0Tuce",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": "azert@azert.com.jpg"
+    },
+    {
+      "prenom": "Mbaye",
+      "nom": "Lo",
+      "login": "mbaye@lo.com",
+      "password": "$2y$10$y2vdeE8tnUtT.IcQmcbDd.QFudcaGe89uLDL7eJROsnYx55/mut5a",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": "mbaye@lo.com.png"
+    },
+    {
+      "prenom": "ibrahima",
+      "nom": "diallo",
+      "login": "ibrahima@gmail.com",
+      "password": "$2y$10$rXrN6.HUQDjKDYSWrVQWBOuDqJq0TQRdxUjEcYxJKxD4UeoXz7nNe",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": "ibrahima@gmail.com.png"
+    },
+    {
+      "prenom": "khadim",
+      "nom": "niass",
+      "login": "khadim@gmail.com",
+      "password": "$2y$10$/y.JKYxhoBvQ0RzypbzdweMLzCPbxDRMLrHPyMJ7Bl.jmO8r3Rwpe",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": "khadim@gmail.com.jpg"
+    },
+    {
+      "prenom": "youssouf",
+      "nom": "bojan",
+      "login": "youssouf@bojan.com",
+      "password": "$2y$10$PZGwaUJIXR1LmiYsMg7E5eYqc4BBW6kjUXSkSvC5Tmp2nA0xpgNY6",
+      "role": "ROLE_JOUEUR",
+      "score": 0,
+      "avatar": ""
+    },
+    {
+      "prenom": "Lamine",
+      "nom": "Ba",
+      "login": "lamine@ba.com",
+      "password": "$2y$10$btylKrHysMfgI9YivMN5Le.Ljgy4YXc0oXakdzD.6altSd0ozr6va",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": ""
+    },
+    {
+      "prenom": "Tapha",
+      "nom": "Der",
+      "login": "taph@der.com",
+      "password": "$2y$10$/H5sFmoBXh5cMQNc3I2s9.qwu7tuJORzE7U3g6BcsdhQ5mUo4sWaG",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": ""
+    },
+    {
+      "prenom": "Souleymane",
+      "nom": "Dieye",
+      "login": "dieye@gmail.com",
+      "password": "$2y$10$RbDi4lMfUuvDk1.mPRB0Zuqi9V4Ze0fShbCLtx6vKFQrOTgIrMyyG",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": ""
+    },
+    {
+      "prenom": "Khadim",
+      "nom": "niass",
+      "login": "boj@jo.com",
+      "password": "$2y$10$FyFhDdEC2JnJi2nAwEYvgOltc4Kn.zetFRnDdaB8c/oQy/L2UqlYK",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": ""
+    },
+    {
+      "prenom": "Khadim",
+      "nom": "Niass",
+      "login": "admin2@gmail.com",
+      "password": "$2y$10$FyKAHoGxfOFW2TK.vTB4fesYG3b0dLx3xHZbQwIIWUOZfzwdMyd2e",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": "admin2@gmail.com.png"
     }
   ]
 }

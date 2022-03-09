@@ -20,14 +20,14 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                 <div class="connect-params">
                 <div class="form-control error">
                     <div class="login">
-                        <input type="text" name="login" placeholder="Login" id="login">
+                        <input type="email" name="login" placeholder="Login" class="conn-login" id="login">
                         <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-login.png" ?>" alt="login-icon">
                         <?php if (isset($errors['login'])) : ?>
                             <p style="color:red"><?= $errors['login'] ?></p>
                         <?php endif ?>
                     </div>
+                    <small id="error-login" class="error-login"></small>
                 </div>    
-                <small id="error-login" class="error-login"></small>
                 </div>
                 <div class="form-control error">
                 <div class="password">
@@ -37,8 +37,8 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
                     <?php endif ?>
                     <img src="<?= WEB_ROOT . DIRECTORY_SEPARATOR . "img" . DIRECTORY_SEPARATOR . "ic-password.png" ?>" alt="password-icon">
                 </div>
-            </div>
-            <small id="error-password" class="error-password"></small>
+                <small id="error-password" class="error-password"></small>
+                </div>
         <div class="connect_sign-in">
         <input type="submit" value="Connexion" id="connexion" name="btnconnexion">
         <a href="<?=WEB_ROOT."?controller=securite&action=inscription"?>" id="inscription">S'inscrire pour jouer</a>
