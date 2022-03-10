@@ -7,6 +7,9 @@ const acc_link=document.querySelector('.acc-link');
 
 // **************************************************************************************************************************************//
 
+placeImage.addEventListener('mouseover',function(){
+      
+})
 inputImage.addEventListener('input',function() {
 const img=document.createElement('img');
 img.accept="image/png";

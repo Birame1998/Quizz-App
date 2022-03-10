@@ -16,4 +16,8 @@
             </tr>
             <?php endforeach ?>
      </table>
-          
+   <?php       
+     for ($page = 1; $page <= $nombre_page; $page++) {
+        echo "<a href='?controller=user&action=liste.joueurs&page=$page' id='link-for-page'>$page</a>";
+    }
+    ?>
