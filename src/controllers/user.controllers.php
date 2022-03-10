@@ -51,9 +51,6 @@ function lister_joueur()
         $t[] = $data[$i];
     }
     $data = $t;
-    for ($page = 1; $page <= $nombre_page; $page++) {
-        echo "<a href='?controller=user&action=liste.joueurs&page=$page' id='link-for-page'>$page</a>";
-    }
     /** end pagination */
     require_once(PATH_VIEWS . "user" . DIRECTORY_SEPARATOR . "liste.joueurs.html.php");
     $content_for_views = ob_get_clean();

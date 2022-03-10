@@ -68,7 +68,7 @@
       "prenom": "Khadim",
       "nom": "Niass",
       "login": "1admin1@gmail.com",
-      "password": "$2y$10$gDUVhJRCvNkON55wMkvlZuXxCKNaWdBr7bcB7FOS9UYAfb\/L\/p2Bi",
+      "password": "$2y$10$gDUVhJRCvNkON55wMkvlZuXxCKNaWdBr7bcB7FOS9UYAfb/L/p2Bi",
       "role": "ROLE_JOUEUR",
       "score": 0
     },
@@ -76,7 +76,7 @@
       "prenom": "dame",
       "nom": "samb",
       "login": "dame@samb.com",
-      "password": "$2y$10$EzgmlJui2xhYOMW5bHQYYeQUDfH6eFV41q1Vet\/muOmbSo4XGZgLe",
+      "password": "$2y$10$EzgmlJui2xhYOMW5bHQYYeQUDfH6eFV41q1Vet/muOmbSo4XGZgLe",
       "role": "ROLE_JOUEUR",
       "score": 0
     },
@@ -92,7 +92,7 @@
       "prenom": "Mbaye ",
       "nom": "Lo",
       "login": "mbayelo@gmail.com",
-      "password": "$2y$10$lG7ao4BNyaKjcAdswjGDruP\/\/8XZVFS7p0GwDvsWOaDnEzVxU8GQu",
+      "password": "$2y$10$lG7ao4BNyaKjcAdswjGDruP//8XZVFS7p0GwDvsWOaDnEzVxU8GQu",
       "role": "ROLE_JOUEUR",
       "score": 0
     },
@@ -100,7 +100,7 @@
       "prenom": "Jean",
       "nom": "Mendy",
       "login": "jeanmendy@gmail.com",
-      "password": "$2y$10$6aK0E\/LofBps6VMSFOyySOybiGVvgX6b18vKytGtPf902Od5UvwoC",
+      "password": "$2y$10$6aK0E/LofBps6VMSFOyySOybiGVvgX6b18vKytGtPf902Od5UvwoC",
       "role": "ROLE_ADMIN",
       "score": 0
     },
@@ -116,7 +116,7 @@
       "prenom": "tening",
       "nom": "ngome",
       "login": "tening@gmail.com",
-      "password": "$2y$10$A78giB\/MX5n.qORMubwbhOTJOUAQmz\/I0yRMWbyxb.PDDxLT\/jOj6",
+      "password": "$2y$10$A78giB/MX5n.qORMubwbhOTJOUAQmz/I0yRMWbyxb.PDDxLT/jOj6",
       "role": "ROLE_ADMIN",
       "score": 0,
       "avatar": "Steve_Jobs_Headshot_2010-CROP.jpg"
@@ -125,16 +125,16 @@
       "prenom": "adma",
       "nom": "ndiaye",
       "login": "adama@ndiaye.com",
-      "password": "$2y$10$405QMQ0ZX9WW\/vW9fu3Kf.YdOKu9RRedJtTt6EwvNYAa1rliDoBGq",
+      "password": "$2y$10$405QMQ0ZX9WW/vW9fu3Kf.YdOKu9RRedJtTt6EwvNYAa1rliDoBGq",
       "role": "ROLE_ADMIN",
       "score": 0,
-      "avatar": "\/opt\/lampp\/htdocs\/quizzApp\/public\/uploads\/Rectangle 48BG Slide (1).png"
+      "avatar": "/opt/lampp/htdocs/quizzApp/public/uploads/Rectangle 48BG Slide (1).png"
     },
     {
       "prenom": "Ahmed Dame",
       "nom": "Samb",
       "login": "samb@gmail.com",
-      "password": "$2y$10$D4oX4ow\/BPo7RFQOLMDy3OBeGcInE2Kn.nuEySteZ1tUKHYb9OCwu",
+      "password": "$2y$10$D4oX4ow/BPo7RFQOLMDy3OBeGcInE2Kn.nuEySteZ1tUKHYb9OCwu",
       "role": "ROLE_ADMIN",
       "score": 0,
       "avatar": ""
@@ -152,7 +152,7 @@
       "prenom": "azert",
       "nom": "azert",
       "login": "azert@azert.com",
-      "password": "$2y$10$gftbO79a9kmxbtGQ4p5DsOLSgBGHK\/Y0DcFhRBFJIZ9hAe2Q0Tuce",
+      "password": "$2y$10$gftbO79a9kmxbtGQ4p5DsOLSgBGHK/Y0DcFhRBFJIZ9hAe2Q0Tuce",
       "role": "ROLE_ADMIN",
       "score": 0,
       "avatar": "azert@azert.com.jpg"
@@ -161,7 +161,7 @@
       "prenom": "Mbaye",
       "nom": "Lo",
       "login": "mbaye@lo.com",
-      "password": "$2y$10$y2vdeE8tnUtT.IcQmcbDd.QFudcaGe89uLDL7eJROsnYx55\/mut5a",
+      "password": "$2y$10$y2vdeE8tnUtT.IcQmcbDd.QFudcaGe89uLDL7eJROsnYx55/mut5a",
       "role": "ROLE_ADMIN",
       "score": 0,
       "avatar": "mbaye@lo.com.png"
@@ -179,7 +179,7 @@
       "prenom": "khadim",
       "nom": "niass",
       "login": "khadim@gmail.com",
-      "password": "$2y$10$\/y.JKYxhoBvQ0RzypbzdweMLzCPbxDRMLrHPyMJ7Bl.jmO8r3Rwpe",
+      "password": "$2y$10$/y.JKYxhoBvQ0RzypbzdweMLzCPbxDRMLrHPyMJ7Bl.jmO8r3Rwpe",
       "role": "ROLE_ADMIN",
       "score": 0,
       "avatar": "khadim@gmail.com.jpg"
@@ -206,7 +206,7 @@
       "prenom": "Tapha",
       "nom": "Der",
       "login": "taph@der.com",
-      "password": "$2y$10$\/H5sFmoBXh5cMQNc3I2s9.qwu7tuJORzE7U3g6BcsdhQ5mUo4sWaG",
+      "password": "$2y$10$/H5sFmoBXh5cMQNc3I2s9.qwu7tuJORzE7U3g6BcsdhQ5mUo4sWaG",
       "role": "ROLE_ADMIN",
       "score": 0,
       "avatar": ""
@@ -224,7 +224,7 @@
       "prenom": "Khadim",
       "nom": "niass",
       "login": "boj@jo.com",
-      "password": "$2y$10$FyFhDdEC2JnJi2nAwEYvgOltc4Kn.zetFRnDdaB8c\/oQy\/L2UqlYK",
+      "password": "$2y$10$FyFhDdEC2JnJi2nAwEYvgOltc4Kn.zetFRnDdaB8c/oQy/L2UqlYK",
       "role": "ROLE_ADMIN",
       "score": 0,
       "avatar": ""
@@ -269,7 +269,7 @@
       "prenom": "bamba",
       "nom": "bamba",
       "login": "bamba@bamba.bamba",
-      "password": "$2y$10$P0lacVmiyhWHEj\/B6CLK6Oc0KDu\/sCjpQQP83V5cv88bAhD6SSbc2",
+      "password": "$2y$10$P0lacVmiyhWHEj/B6CLK6Oc0KDu/sCjpQQP83V5cv88bAhD6SSbc2",
       "role": "ROLE_ADMIN",
       "score": 0,
       "avatar": "bamba@bamba.bamba.jpg"
@@ -287,10 +287,19 @@
       "prenom": "bamba",
       "nom": "bamba",
       "login": "bambaaaaa@gamil.com",
-      "password": "$2y$10$Z6q5a9fnQiE\/.AA451xTrOyB3SPSHlDgvA6lbqjRfoDipKn1zi\/9e",
+      "password": "$2y$10$Z6q5a9fnQiE/.AA451xTrOyB3SPSHlDgvA6lbqjRfoDipKn1zi/9e",
       "role": "ROLE_ADMIN",
       "score": 0,
       "avatar": "bambaaaaa@gamil.com.png"
+    },
+    {
+      "prenom": "Khadim",
+      "nom": "Niass",
+      "login": "khadim1@gmail.com",
+      "password": "$2y$10$JNMjCMiUTMbf4QuPo3b0yuGcYjS46uA3/czE7lcDJTK897NDgyIVC",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": "khadim1@gmail.com.jpg"
     }
   ]
 }
