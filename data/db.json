@@ -291,6 +291,15 @@
       "role": "ROLE_ADMIN",
       "score": 0,
       "avatar": "bambaaaaa@gamil.com.png"
+    },
+    {
+      "prenom": "Dame",
+      "nom": "Samb",
+      "login": "samb1@gmail.com",
+      "password": "$2y$10$WPLI.m4P55Zfzj4eo6lrm.nvduesBxlNLF9buAHkBD0VJzSDzANcu",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": "samb1@gmail.com.jpg"
     }
   ]
 }

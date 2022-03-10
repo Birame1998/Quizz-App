@@ -10,7 +10,7 @@
             </div>
             <div class="ins-settings">
                 <form action="<?= WEB_ROOT ?>" method="POST" enctype="multipart/form-data" id="form-ins">
-                <input type="file" name="avatar" id="avatar-ins" class="avatar-ins" value="Choisir un fichier">
+                <input type="file" accept="image/*" name="avatar" id="avatar-ins" class="avatar-ins">
                     <input type="hidden" name="role" value="<?= is_admin() ? "ROLE_ADMIN" : "ROLE_JOUEUR" ?>">
                     <input type="hidden" name="controller" value="securite">
                     <input type="hidden" name="action" value="inscription">
@@ -70,7 +70,7 @@
                         <div class="choose-file">
                             <label for="avatar-ins" id="avatar-ins2" class="avatar-ins">Avatar</label>
                             <label for="avatar-ins" id="choose-file">
-                                Choisir un fichier
+                                Choisir une image
                             </label>
                         </div>
                         <div class="create-account-ins"><button id="creer-compte-ins">Creer compte</button></div>
@@ -82,9 +82,9 @@
             <?php endif ?>  
         </div>
         <div class="ins-avatar">
-            <label for="avatar-ins" class="lab-avatar-ins"><div><span>Cliquez ici pour choisir une image</span></div></label>
-            <?php if (isset($errors['avatar'])) : ?>
-                <small><?= $errors['avatar']?> </small>
-            <?php endif ?>
+                <?php if (isset($errors['avatar'])) : ?>
+                <small class="error" ><?=  $errors['avatar']?> </small>
+                <?php endif ?>
+                <label for="avatar-ins" class="lab-avatar-ins"><div><span>Cliquez ici pour choisir une image</span></div></label>
                 <!-- <img  class="ins-avatar-profile" src="<?=WEB_ROOT."uploads".DIRECTORY_SEPARATOR."1.jpg"?>" alt="photo de profil"> -->
         </div>

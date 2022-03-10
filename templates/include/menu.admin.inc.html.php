@@ -13,19 +13,19 @@
                 </div>                
             </div>
             <div class="taches">
-                <div class="liste-question">
+                <div class="liste-question m-on-click">
                     <a href="#" class="acc-link"><li class="m-link">Liste Questions</li></a>
                     <div class="img1"></div>
                 </div>
-                <div class="creer-admin">
+                <div class="creer-admin m-on-click">
                 <a href="<?=WEB_ROOT."?controller=user&action=inscription"?>" class="acc-link"><li class="m-link">Creer un admin</li></a>
                     <div class="img2"></div>
                 </div>
-                <div class="liste-joueurs">
+                <div class="liste-joueurs m-on-click">
                     <a href="<?=WEB_ROOT."?controller=user&action=liste.joueurs"?>" id="a_list_joueurs" class="acc-link"><li class="m-link" for="img3">Liste Joueurs</li></a>
                     <div class="img3"></div>
                 </div>
-                <div class="creer-questions">
+                <div class="creer-questions  m-on-click">
                 <a href="<?=WEB_ROOT."?controller=user&action=creerquestion"?>" class="acc-link"><li class="m-link">Creer une question</li></a>
                     <div class="img4"></div>
                 </div>        

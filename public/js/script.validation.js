@@ -13,7 +13,7 @@ form.addEventListener("submit", function (e) {
     e.preventDefault();
     showError(inputLogin, smalllogin, "le login est obligatoire");
   }else{
-    if (! checkEmail(inputLogin)) {
+    if (!checkEmail(inputLogin)) {
       e.preventDefault();
       showError(inputLogin,smalllogin,"le login doit etre un email",);
     }
@@ -42,3 +42,6 @@ form.addEventListener("submit", function (e) {
   }
 
 });
+
+
+

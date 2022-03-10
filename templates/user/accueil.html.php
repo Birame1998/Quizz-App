@@ -30,11 +30,7 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
       ?>
       <?php if ($_GET['action'] != "accueil") : ?>
         <?php if ($_GET['action'] == "liste.joueurs") : ?>
-          <div class="next-prev">
-            
-            <button class="previous acc-butt-prev-next">Precedent</button>
-            <button class="next acc-butt-prev-next" ><label for="link-for-page">Suivant</label></button>
-          </div>
+        <?php require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."next.prev.buttons.html.php") ?>  
     </div>
   <?php endif ?>
 <?php endif ?>

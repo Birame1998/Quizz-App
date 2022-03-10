@@ -34,7 +34,7 @@ function lister_joueur()
 
     $nombre_page = ceil($nombre_de_joueurs / NOMBRE_JOUEUR_PAGE);
     if (isset($_GET['page'])) {
-        $page_actuel = $_GET['page'];
+        $page_actuel = (int)$_GET['page'];
         if ($page_actuel>$nombre_page) {
             $page_actuel=$nombre_page;   
         }elseif($page_actuel<1) {
@@ -51,9 +51,6 @@ function lister_joueur()
         $t[] = $data[$i];
     }
     $data = $t;
-    for ($page = 1; $page <= $nombre_page; $page++) {
-        echo "<a href='?controller=user&action=liste.joueurs&page=$page' id='link-for-page'>$page</a>";
-    }
     /** end pagination */
     require_once(PATH_VIEWS . "user" . DIRECTORY_SEPARATOR . "liste.joueurs.html.php");
     $content_for_views = ob_get_clean();

@@ -206,8 +206,8 @@ img[alt="img"]{
     color: gray;
 }
  #link-for-page{
-     width: 2vw;
      font-size: 1.5rem;
      text-decoration: none;
      cursor: pointer;
+     
 }

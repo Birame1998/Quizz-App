@@ -20,30 +20,27 @@
                 <div class="cr-form-controller">
                     <label for="">Type de réponse</label>
                     <select name="" id="" value="here">
-                        <option value=""></option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
+                        <option value="">Donner le type de reponse</option>
+                        <option value="">Simple</option>
+                        <option value="">Texte</option>
+                        <option value="">Multiple</option>
                     </select>
-                    <a href="">
-                        <img src="<?= WEB_ROOT . "img/" . "ic-ajout-réponse.png" ?>" alt="ajout-reponse">
-                    </a>
+                        <button class="cr-add-answerbtn" type="button"></button>    
                 </div>
-
-                <div class="cr-form-controller">
-                    <label for="">Réponse 1</label>
-                    <input type="text" id="cr-txt">
-                    <input type="checkbox" name="" id="cr-check">
-                    <input type="radio" name="" id="cr-rad">
-                    <a href="">
-                        <img src="<?= WEB_ROOT . "img/" . "ic-supprimer.png" ?>" alt="btn-delete">
-                    </a>
-                </div>
-                <div class="cr-contain-btn">
+                <div class="answer_contain">
+                    <!-- <div class="cr-form-controller">
+                         <label for="">Réponse 1</label>
+                        <input type="text" id="cr-txt">
+                        <input type="checkbox" name="" id="cr-check">
+                        <input type="radio" name="" id="cr-rad">
+                        <button class="cr-delete-answerbtn" type="button"></button>
+                    </div>  -->
+                </div> 
+                    <div class="cr-contain-btn">
                     <button>Enregistrer</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
+

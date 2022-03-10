@@ -108,7 +108,8 @@ function register($prenom, $nom, $login, $password, $password2, $role)
     login_existe($login, 'login', $errors);
 
     $password_hashed = password_hash($password, PASSWORD_DEFAULT);
-
+    // var_dump($errors);
+    // die;
     if (count($errors) == 0) {
         $newUser = [
             'prenom' => htmlspecialchars($prenom),

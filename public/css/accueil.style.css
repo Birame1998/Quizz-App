@@ -244,14 +244,14 @@ tr{
     border: none;
     font-size: 1em;
     color: white;
-
     }
-.previous{
-    visibility: hidden;
-}
+
 .player-list{
     width: 40vw;
 }
 #disconnect{
     cursor: pointer;
+}
+.remove-lab{
+    display: none;
 }
