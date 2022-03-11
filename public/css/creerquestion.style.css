@@ -13,6 +13,7 @@
   border-radius: 20px;
   height: 85%;
   margin: 2%;
+  font-size: 1.3;
 }
 .cr-head-quest {
   display: flex;
@@ -65,30 +66,28 @@
   height: 85%;
 }
 
-#cr-point{
+#cr-point {
   background-color: rgb(247, 247, 247);
   width: 5vw;
   height: 4vh;
   margin-left: 3%;
 }
-input[id="cr-txt"]{
-width: 20vw;
-height: 5vh;
-margin-left: 3%;
-
+input[id="cr-txt"] {
+  width: 20vw;
+  height: 5vh;
+  margin-left: 3%;
 }
-input[id="cr-check"]{
-  height: 3vh;
-  width: 3vw;
-  align-self: center;
-
-}
-input[id="cr-rad"]{
+input[id="cr-check"] {
   height: 3vh;
   width: 3vw;
   align-self: center;
 }
-.cr-form-controller{
+input[id="cr-rad"] {
+  height: 3vh;
+  width: 3vw;
+  align-self: center;
+}
+.cr-form-controller {
   display: flex;
   margin-top: 2%;
   align-items: center;
@@ -98,10 +97,10 @@ input[id="cr-rad"]{
   width: 100%;
   cursor: pointer;
 } */
-img[alt="img-delete"]{
+img[alt="img-delete"] {
   cursor: pointer;
 }
-.cr-add-answerbtn{
+.cr-add-answerbtn {
   height: 5vh;
   width: 3vw;
   border: none;
@@ -109,8 +108,9 @@ img[alt="img-delete"]{
   justify-content: center;
   background-image: url(../img/ic-ajout-réponse.png);
   background-size: cover;
+  cursor: pointer;
 }
-.cr-delete-answerbtn{
+.cr-delete-answerbtn {
   background-image: url(../img/ic-supprimer.png);
   background-size: contain;
   background-color: #fff;
@@ -118,10 +118,10 @@ img[alt="img-delete"]{
   border: none;
   width: 2vw;
 }
-.answer_contain{
+.answer_contain {
   display: grid;
   height: 55%;
-  grid-template-rows: repeat(auto-fill,10vh);
+  grid-template-rows: repeat(auto-fill, 10vh);
 }
 .cr-contain-btn {
   display: flex;

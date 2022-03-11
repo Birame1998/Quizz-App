@@ -21,6 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             creer_admin();
         } elseif ($_GET['action'] == "creerquestion") {
             creer_question();
+        } elseif($_GET['action']=="liste.question"){
+            lister_question();
         }
     }
 }
@@ -29,9 +31,8 @@ function lister_joueur()
     ob_start();
     $data = find_users(ROLE_JOUEUR);
     /** begin pagination */
-    define("NOMBRE_JOUEUR_PAGE", 5);
+    define("NOMBRE_JOUEUR_PAGE", 8);
     $nombre_de_joueurs = count($data);
-
     $nombre_page = ceil($nombre_de_joueurs / NOMBRE_JOUEUR_PAGE);
     if (isset($_GET['page'])) {
         $page_actuel = (int)$_GET['page'];
@@ -45,6 +46,7 @@ function lister_joueur()
     }
     $indice_depart = ($page_actuel - 1) * NOMBRE_JOUEUR_PAGE;
     $indice_fin = $indice_depart + NOMBRE_JOUEUR_PAGE - 1;
+    
     $t = [];
     for ($i = $indice_depart; $i <= $indice_fin; $i++) {
         if(isset($data[$i]))
@@ -66,7 +68,14 @@ function creer_admin()
 function creer_question()
 {
     ob_start();
-    require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "creer-question.html.php");
+    require_once(PATH_VIEWS . "question" . DIRECTORY_SEPARATOR ."creer-question.html.php");
     $content_for_question = ob_get_clean();
+    require_once(PATH_VIEWS . "user" . DIRECTORY_SEPARATOR . "accueil.html.php");
+}
+function lister_question()
+{
+    ob_start();
+    require_once(PATH_VIEWS . "question" . DIRECTORY_SEPARATOR ."liste.question.html.php");
+    $content_for_lister_queston = ob_get_clean();
     require_once(PATH_VIEWS . "user" . DIRECTORY_SEPARATOR . "accueil.html.php");
 }

@@ -1,6 +1,9 @@
 <?php
-function register_picture($login)
+function register_picture($login,$role)
 {
+    $part_name[0]=explode('@',$login);
+    $file_name=$part_name.$role;
+
     if (isset($_FILES["avatar"]) && !empty($_FILES["avatar"])) {
         $file_name = $_FILES['avatar']['name'];
         $ext = strrchr($file_name, '.');
@@ -17,4 +20,11 @@ function register_picture($login)
             $errors['avatar'] = "choisseez une photo au bon format";
         }
     }
+}
+function is_image($name_image)
+{
+    $file_name = $_FILES['avatar']['name'];
+    $ext = strrchr($file_name, '.');
+    $file_to_save = $_FILES['avatar']['tmp_name'];
+    $extention_autorier = ['.png', '.jpg', '.jpeg', '.gif'];
 }

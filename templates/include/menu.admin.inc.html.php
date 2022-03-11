@@ -14,7 +14,7 @@
             </div>
             <div class="taches">
                 <div class="liste-question m-on-click">
-                    <a href="#" class="acc-link"><li class="m-link">Liste Questions</li></a>
+                    <a href="<?=WEB_ROOT.'?controller=user&action=liste.question'?>" class="acc-link"><li class="m-link">Liste Questions</li></a>
                     <div class="img1"></div>
                 </div>
                 <div class="creer-admin m-on-click">
