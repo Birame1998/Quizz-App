@@ -1,9 +1,5 @@
 <?php
-<<<<<<< HEAD
-function register_picture($login,$chemin,$errors)
-=======
 function register_picture($login,$role)
->>>>>>> cea3d513f0a7e8c2576c2eee28578c93b31a7954
 {
     $part_name[0]=explode('@',$login);
     $file_name=$part_name.$role;
