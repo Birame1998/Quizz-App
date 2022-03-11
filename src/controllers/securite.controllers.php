@@ -71,18 +71,21 @@ function register($prenom, $nom, $login, $password, $password2, $role)
 {
     $errors = [];
     /**traitememt de l'enregistrement de l'avatar */
-    // echo '<pre>';
-    // var_dump($_FILES);die;
-    // echo '<pre>';
     $chemin = '';
-    register_picture($login,$chemin,$errors);
-    // if (isset($_FILES["avatar"]) && !empty($_FILES["avatar"])) {
-    //     $file_name = $_FILES['avatar']['name'];
-    //     $ext = strrchr($file_name, '.');
-    //     $file_to_save = $_FILES['avatar']['tmp_name'];
-    //     $extention_autorier = ['.png', '.jpg', '.jpeg', '.gif'];
-    //     $file_name = $login . $ext;
-    //     $file_route = ROOT . "public" . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $file_name;
+    if (isset($_FILES["avatar"]) && !empty($_FILES["avatar"])) {
+        $part_name=implode(explode('@',$login));
+        
+        $part=$part_name;
+
+        $file_name = $_FILES['avatar']['name'];
+        $ext = strrchr($file_name, '.');
+        $file_to_save = $_FILES['avatar']['tmp_name'];
+        $extention_autorier = ['.png', '.jpg', '.jpeg', '.gif'];
+
+        // $file_name = $login . $ext;
+        $file_name = $part.$role . $ext;
+        $file_route = ROOT . "public" . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $file_name;
+    }
 
     //     if (in_array($ext, $extention_autorier)) {
     //         if (move_uploaded_file($file_to_save, $file_route)) {
@@ -97,8 +100,9 @@ function register($prenom, $nom, $login, $password, $password2, $role)
     champ_obligatoire('prenom', $prenom, $errors, "Veuillez entrer votre prenom");
     // die('sur la page de registration');
     champ_obligatoire('nom', $nom, $errors, "Veuillez entrer votre nom");
-    champ_obligatoire('login', $login, $errors, "Veuillez entrer le login");
     champ_obligatoire('password', $password, $errors, "Veuillez entrer votre mot de passe pour s'inscrire");
+    champ_obligatoire('login', $login, $errors, "Veuillez entrer le login");
+    valid_emil_gmail('email-gmail',$login,$errors);
     if (!isset($errors['login'])) {
         valid_email('login', $login, $errors, "veillez entrer un email valide");
     }
@@ -109,8 +113,6 @@ function register($prenom, $nom, $login, $password, $password2, $role)
     login_existe($login, 'login', $errors);
 
     $password_hashed = password_hash($password, PASSWORD_DEFAULT);
-    // var_dump($errors);
-    // die;
     if (count($errors) == 0) {
         $newUser = [
             'prenom' => htmlspecialchars($prenom),

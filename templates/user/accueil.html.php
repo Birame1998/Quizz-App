@@ -26,6 +26,8 @@ require_once(PATH_VIEWS . "include" . DIRECTORY_SEPARATOR . "header.inc.html.php
         echo $content_for_admin_sign_in;
       } elseif ($_GET['action'] == "creerquestion") {
         echo $content_for_question;
+      } elseif($_GET['action']=="liste.question"){
+        echo $content_for_lister_queston;
       }
       ?>
       <?php if ($_GET['action'] != "accueil") : ?>

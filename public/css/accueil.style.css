@@ -230,12 +230,21 @@ tr{
     font-style: italic;
 }
 .next-prev{
+    cursor: pointer;
+    position: relative;
     display: flex;
     margin: auto;
     width: 30vw;
     justify-content: space-between;
 }
+.previous{
+    left: 0 ;
+}
+.next{
+    right: 0;
+}
 .acc-butt-prev-next{
+    position: absolute;
     height: 5vh;
     width: 7vw;
     margin-top: 2vh;

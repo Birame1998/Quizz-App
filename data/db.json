@@ -9,6 +9,15 @@
       "score": 30
     },
     {
+      "prenom": "Khadim",
+      "nom": "Niass",
+      "login": "admin2@gmail.com",
+      "password": "admin2",
+      "role": "ROLE_ADMIN",
+      "score": 0,
+      "avatar": "niassROLE_JOUEUR.jpg"
+    },
+    {
       "nom": "Balde",
       "prenom": "Mamadou Lamarana",
       "login": "joueur@gmail.com",
@@ -261,7 +270,7 @@
       "nom": "elhandj",
       "login": "diewrine@gmail.com",
       "password": "$2y$10$R2xVBZA9EI4ZeEdFcGeEqegaVDA6b8Lz7QznzZXhGBw9GU.vL.YCK",
-      "role": "ROLE_ADMIN",
+      "role": "ROLE_JOUEUR",
       "score": 0,
       "avatar": "diewrine@gmail.com.png"
     },
@@ -270,7 +279,7 @@
       "nom": "bamba",
       "login": "bamba@bamba.bamba",
       "password": "$2y$10$P0lacVmiyhWHEj/B6CLK6Oc0KDu/sCjpQQP83V5cv88bAhD6SSbc2",
-      "role": "ROLE_ADMIN",
+      "role": "ROLE_JOUEUR",
       "score": 0,
       "avatar": "bamba@bamba.bamba.jpg"
     },
@@ -279,7 +288,7 @@
       "nom": "bamba",
       "login": "bamba@gmail.com",
       "password": "$2y$10$GN5kLPmFoMOG1VYuLCJxMO.QTZdHe6pxGxAb5StohK4q3vONcDFFu",
-      "role": "ROLE_ADMIN",
+      "role": "ROLE_JOUEUR",
       "score": 0,
       "avatar": "bamba@gmail.com.png"
     },
@@ -288,7 +297,7 @@
       "nom": "bamba",
       "login": "bambaaaaa@gamil.com",
       "password": "$2y$10$Z6q5a9fnQiE/.AA451xTrOyB3SPSHlDgvA6lbqjRfoDipKn1zi/9e",
-      "role": "ROLE_ADMIN",
+      "role": "ROLE_JOUEUR",
       "score": 0,
       "avatar": "bambaaaaa@gamil.com.png"
     },
@@ -297,18 +306,81 @@
       "nom": "Samb",
       "login": "samb1@gmail.com",
       "password": "$2y$10$WPLI.m4P55Zfzj4eo6lrm.nvduesBxlNLF9buAHkBD0VJzSDzANcu",
-      "role": "ROLE_ADMIN",
+      "role": "ROLE_JOUEUR",
       "score": 0,
       "avatar": "samb1@gmail.com.jpg"
     },
-    { 
+    {
       "prenom": "Khadim",
       "nom": "Niass",
       "login": "khadim1@gmail.com",
       "password": "$2y$10$JNMjCMiUTMbf4QuPo3b0yuGcYjS46uA3/czE7lcDJTK897NDgyIVC",
-      "role": "ROLE_ADMIN",
+      "role": "ROLE_JOUEUR",
       "score": 0,
       "avatar": "khadim1@gmail.com.jpg"
+    },
+    {
+      "prenom": "seydoou",
+      "nom": "sane",
+      "login": "seydou@sane.com",
+      "password": "$2y$10$94fSeqnqKddYD.hk30Jkne59sj6uCSA7Cg1cMO410QtKwu1S7qFzO",
+      "role": "ROLE_JOUEUR",
+      "score": 0,
+      "avatar": "ArrayROLE_JOUEUR.png"
+    },
+    {
+      "prenom": "khadim",
+      "nom": "Niass",
+      "login": "niass@gmail.com",
+      "password": "$2y$10$2ntDRun3jDEb6OAyMqud7O0H.kCUAacQZpfB9oWiR/N9HMG00zdu.",
+      "role": "ROLE_JOUEUR",
+      "score": 0,
+      "avatar": "ArrayROLE_JOUEUR.jpg"
+    },
+    {
+      "prenom": "seydoou",
+      "nom": "sane",
+      "login": "seydou@gmail.com",
+      "password": "$2y$10$PyMfY7MCX.nWroiiIKL/m.Gi0QAC3bpf9rPylaDcktKLUWGEvb7ta",
+      "role": "ROLE_JOUEUR",
+      "score": 0,
+      "avatar": "ArrayROLE_JOUEUR.png"
+    },
+    {
+      "prenom": "BIRAM MOUSSA",
+      "nom": "MOUSSA",
+      "login": "admin1@gmail.com",
+      "password": "$2y$10$d9LGD8sg3bXW0pHn.JX6Su8S.bib8O.6/vCjzmIw6Y1e5LOY9x7pe",
+      "role": "ROLE_JOUEUR",
+      "score": 0,
+      "avatar": "ArrayROLE_JOUEUR.jpg"
+    },
+    {
+      "prenom": " MOUSSA",
+      "nom": "DIOUF",
+      "login": "moussa@gmail.com",
+      "password": "$2y$10$NbCMRirJjE.vJmTeutZ59OhDGFfM5CHjD1kRL6gJRLru5ITQQDG92",
+      "role": "ROLE_JOUEUR",
+      "score": 0,
+      "avatar": "moussagmail.comROLE_JOUEUR.jpg"
+    },
+    {
+      "prenom": "Khadim",
+      "nom": "Niass",
+      "login": "khadim@hotmail.fr",
+      "password": "$2y$10$5IONhCi9cqjdf.JFcRUWAOLTIIVvzthJ5Cj7MI5/ZMOqc4Uq3LU7e",
+      "role": "ROLE_JOUEUR",
+      "score": 0,
+      "avatar": "khadimhotmail.frROLE_JOUEUR.jpg"
+    },
+    {
+      "prenom": "Khadim",
+      "nom": "Niass",
+      "login": "Khadim@hotmail.com",
+      "password": "$2y$10$0FUukEGiSS4E/blMtx.ILeS6In/ns/aMSt9y.2SWOH8hEyJeZCu7m",
+      "role": "ROLE_JOUEUR",
+      "score": 0,
+      "avatar": "Khadimhotmail.comROLE_JOUEUR.jpg"
     }
   ]
 }

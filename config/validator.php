@@ -12,6 +12,14 @@ function valid_email(string $key, string $data, array &$errors, string $message 
         $errors[$key] = $message;
     }
 }
+function valid_emil_gmail(string $key, string $data, array &$errors, string $message = "Email doit etre un gmail")
+{
+    $ended=explode('@',$data);
+    $ended=implode('',$ended);
+    if (strcmp($ended,"@gmail.com")!=0) {
+        $error[$key]=$message;
+    }
+}
 function valid_password(string $key, string $data, array &$errors, string $message = "le mot de pass doit contenir au moins 6 caractere ayant des lettre et des chiifres")
 {
     $monregex1 = '#[a-z]#';
@@ -46,7 +54,3 @@ function image_valide(array &$error,$key,$message="choisseez une photo au bon fo
     $file_name = $_FILES['avatar']['name'];
     
 }
-
-
-
-
