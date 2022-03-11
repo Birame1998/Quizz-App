@@ -1,5 +1,5 @@
 <?php
-function register_picture($login)
+function register_picture($login,$chemin,$errors)
 {
     if (isset($_FILES["avatar"]) && !empty($_FILES["avatar"])) {
         $file_name = $_FILES['avatar']['name'];

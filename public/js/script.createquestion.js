@@ -1,10 +1,10 @@
 const add_answer=document.querySelector(".cr-add-answerbtn");
 const answer_contain=document.querySelector(".answer_contain");
+const selectValue = document.getElementById("type-question");
 
 //**********************************************************************//
 
 add_answer.addEventListener('click',function(){
-let count=2    
 var lab_reponse=document.createElement('label');
 var input_text_reponse=document.createElement('input');
 var input_check_reponse=document.createElement('input');
@@ -30,5 +30,12 @@ answer_contain.appendChild(cr_form_controller);
 btn_delete_reponse.addEventListener('click',function() {
     btn_delete_reponse.parentNode.remove();
 })
-
 });
+
+
+
+ 
+  
+
+
+  

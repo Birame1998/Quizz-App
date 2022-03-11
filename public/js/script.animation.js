@@ -30,11 +30,4 @@ lab_avatar_ins.classList="remove-lab";
 
 /*********************************************************************************************************************************************************************/
 
-const m_link=document.querySelector('#a_list_joueurs');
-const img_ajout_liste=document.getElementsByClassName('img4');
-
-m_link.addEventListener('click',function(){
-    alert('ok');
-
-});
 

@@ -75,22 +75,23 @@ function register($prenom, $nom, $login, $password, $password2, $role)
     // var_dump($_FILES);die;
     // echo '<pre>';
     $chemin = '';
-    if (isset($_FILES["avatar"]) && !empty($_FILES["avatar"])) {
-        $file_name = $_FILES['avatar']['name'];
-        $ext = strrchr($file_name, '.');
-        $file_to_save = $_FILES['avatar']['tmp_name'];
-        $extention_autorier = ['.png', '.jpg', '.jpeg', '.gif'];
-        $file_name = $login . $ext;
-        $file_route = ROOT . "public" . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $file_name;
+    register_picture($login,$chemin,$errors);
+    // if (isset($_FILES["avatar"]) && !empty($_FILES["avatar"])) {
+    //     $file_name = $_FILES['avatar']['name'];
+    //     $ext = strrchr($file_name, '.');
+    //     $file_to_save = $_FILES['avatar']['tmp_name'];
+    //     $extention_autorier = ['.png', '.jpg', '.jpeg', '.gif'];
+    //     $file_name = $login . $ext;
+    //     $file_route = ROOT . "public" . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $file_name;
 
-        if (in_array($ext, $extention_autorier)) {
-            if (move_uploaded_file($file_to_save, $file_route)) {
-                $chemin = $file_name;
-            }
-        } else {
-            $errors['avatar'] = "choisseez une photo au bon format";
-        }
-    }
+    //     if (in_array($ext, $extention_autorier)) {
+    //         if (move_uploaded_file($file_to_save, $file_route)) {
+    //             $chemin = $file_name;
+    //         }
+    //     } else {
+    //         $errors['avatar'] = "choisseez une photo au bon format";
+    //     }
+    // }
     // die("after testing");
     /** traitement de sans l'avatar */
     champ_obligatoire('prenom', $prenom, $errors, "Veuillez entrer votre prenom");

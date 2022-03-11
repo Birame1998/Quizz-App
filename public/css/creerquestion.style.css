@@ -64,12 +64,44 @@
   /* border: 1px solid black; */
   height: 85%;
 }
+.error-crq{
+  width: fit-content;
+  height: fit-content;
+  color: red;
+  font-style: oblique;
+  font-size: 1.3rem;
+}
 
 #cr-point{
   background-color: rgb(247, 247, 247);
   width: 5vw;
+  text-align: center;
+  font-size: 1.3rem;
   height: 4vh;
-  margin-left: 3%;
+  margin-left: 1%;
+}
+.error-number{
+  color: red;
+  text-align: start;
+  font-style: oblique;
+  height: 100%;
+  font-size: 1.5rem;
+  width: 40%;
+  margin-left: 10%;
+}
+.ajout-retrait{
+height: 80%;
+width: 3%;
+background-color: rgb(57, 221, 214);
+color: white;
+font-size: 1.5rem;
+border: none;
+}
+.plus-number{
+margin-left: 1%;
+}
+.moins-number{
+margin-left: 5%;
 }
 input[id="cr-txt"]{
 width: 20vw;
@@ -113,6 +145,7 @@ img[alt="img-delete"]{
 .cr-delete-answerbtn{
   background-image: url(../img/ic-supprimer.png);
   background-size: contain;
+  background-repeat: no-repeat;
   background-color: #fff;
   height: 5vh;
   border: none;

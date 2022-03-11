@@ -1,10 +1,10 @@
 const form = document.getElementById("form");
-
 const inputLogin = document.getElementById("login");
 const inputPassword = document.getElementById("password");
 
 const smalllogin = document.getElementById("error-login");
 const smallpassword = document.getElementById("error-password");
+
 //réactiver les parametre du form pour envoyer les données...
 
 
@@ -42,6 +42,16 @@ form.addEventListener("submit", function (e) {
   }
 
 });
+
+
+
+
+// ****************************************************************************//
+
+
+
+
+
 
 
 

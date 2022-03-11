@@ -51,3 +51,31 @@ function ChampObligatoir(input) {
 function validPassword(input){
     return(containNumber(input)&& containLetter(input) && checkLength(input));
 }
+
+
+
+
+
+
+
+
+
+function activeBtn() {
+  add_answer.disabled = false;
+}
+function creerQuestion() {
+  switch (selectValue.value) {
+    case "simple":
+      createInputTypeText();
+      createRadio();
+      break;
+    case "text":
+      createInputTypeText();
+      add_answer.disabled = true;
+      break;
+    case "multiple":
+      createInputTypeText();
+      createCheckbox();
+      break;
+  }
+}
