@@ -1,266 +1,269 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
-input:focus{
-    outline: none;
+input:focus {
+  outline: none;
 }
-body{
-width: 100vw;
-height: 100vh;
-background:linear-gradient(rgba(5,36,38,0.2),rgba(5,36,38,0.459)),url("../img/img-bg.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-overflow: hidden;
-display: flex;
-flex-direction: column;
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(5, 36, 38, 0.2), rgba(5, 36, 38, 0.459)),
+    url("../img/img-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
-.header{
-    height: 10vh;
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-    background-color: rgb(5,36,38);
+.header {
+  height: 10vh;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(5, 36, 38);
 }
-img[alt="img"]{
-    width: 100px;
-    height: 100px;
+img[alt="img"] {
+  width: 100px;
+  height: 100px;
 }
-.slogan{
-    margin-left: 30vw;
+.slogan {
+  margin-left: 30vw;
 }
-.acc-contain-main{
-    margin: 1vh 2vw ;
-    height: 90vh;
-    background-color: rgb(242,242,242);
-    border-radius: 10px;
-
+.acc-contain-main {
+  margin: 1vh 2vw;
+  height: 90vh;
+  background-color: rgb(242, 242, 242);
+  border-radius: 10px;
 }
-.header-admin{
-    flex: 1;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(81,191,208);
-    color: white;
-
+.header-admin {
+  flex: 1;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(81, 191, 208);
+  color: white;
 }
-.big-title{
-    flex: 9;
-    font-size: 20px;
-}
-
-.deconnexion{
-    flex: 1;
-
-}
-input[value="Deconnexion"]{
-    padding: 1vh;
-    width: 8vw;
-    margin-right: 2vw;
-    background-color: rgb(57,221,214);
-    border-color: rgb(57,221,214);
-    color: white;
-    font-size: 1rem;
-}
-.acc-main{
-    flex: 9;
-    display: flex;
-    flex-direction: row;
-    height: 90%;
-}
-.taches-admin{
-    flex:3;
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    margin-left: 1%;
-    margin-top: 5%;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px white;
-    background-color: white;
-}
-.avatar{
-    flex:3;
-    display: flex;
-    flex-direction: row;
-    background-image: linear-gradient(120deg,white 10%,rgb(93,195,210) 80%);
-    color: white;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-.admin-profile{
-    flex: 6;
-}
-#profil{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-left: 2vw;
-}
-.admin-name{
-    flex: 4;
-    margin-top: 1vh;
-    margin-right: 0.5vw;
-}
-.m-link{
-color: gray;
-font-size: 1.3rem;
-margin-left: 5vh;
-list-style: none;
-cursor: pointer;
+.big-title {
+  flex: 9;
+  font-size: 20px;
 }
 
-.taches div:hover{
-    background-color: rgb(248, 243, 240);
-    display: flex;
-    align-items: center;
+.deconnexion {
+  flex: 1;
 }
-.taches div li:hover{
-    border-left: 5px solid green;
+input[value="Deconnexion"] {
+  padding: 1vh;
+  width: 8vw;
+  margin-right: 2vw;
+  background-color: rgb(57, 221, 214);
+  border-color: rgb(57, 221, 214);
+  color: white;
+  font-size: 1rem;
 }
-.taches{
-    flex: 7;
-    margin-top: 5vh;
+.acc-main {
+  flex: 9;
+  display: flex;
+  flex-direction: row;
+  height: 90%;
 }
-.liste-question{
-    height: 5vh;
-    display: flex;
-    justify-content: space-between;
+.taches-admin {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  margin-left: 1%;
+  margin-top: 5%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px white;
+  background-color: white;
 }
-.img1{
-    flex:1;
-    height: 5vh;
-    background-image: url(../img/ic-liste.png);
-    background-size: 70%;
-    background-repeat: no-repeat;
-    cursor: pointer;
+.avatar {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(120deg, white 10%, rgb(93, 195, 210) 80%);
+  color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
-.acc-link{ 
-    flex:9;
-    text-decoration: none;
-
+.admin-profile {
+  flex: 6;
 }
-.creer-admin{
-    height: 5vh;
-    display: flex;
-    justify-content: space-between;
+#profil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 2vw;
 }
-
-.img3{
-    flex:1;
-    height: 5vh;
-    background-image: url(../img/ic-liste.png);
-    background-size: 70%;
-    background-repeat: no-repeat;
-    cursor: pointer;
+.admin-name {
+  flex: 4;
+  margin-top: 1vh;
+  margin-right: 0.5vw;
 }
-
-.liste-joueurs{
-    height: 5vh;
-    display: flex;
-    justify-content: space-between;
-    
-}
-.img2{
-    flex: 1;
-    height: 5vh;
-    background-image: url(../img/ic-ajout.png);
-    background-size: 70%;
-    background-repeat: no-repeat;
-    cursor:pointer;
-}
-.creer-questions{
-    height: 5vh;
-    display: flex;
-    justify-content: space-between;
-}
-.img4{
-    flex: 1;
-    height: 5vh;
-    background-image: url(../img/ic-ajout.png);
-    background-size: 70%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-.contain-view{
-    flex: 7;
-    margin-left: 2%;
-    text-align: center;
-    background-color: white;
-    height: 90%;
-    display: flex;
-    /* margin: 2% 3%; */
-    border-radius: 15px;
-}
-.ins-text{
-    height: 80%;
+.m-link {
+  color: gray;
+  font-size: 1.3rem;
+  margin-left: 5vh;
+  list-style: none;
+  cursor: pointer;
 }
 
-.img5{
-    flex:1;
-    height: 5vh;
-    background-image: url(../img/ic-liste-active.png);
-    background-size: 70%;
-    background-repeat: no-repeat;
-    cursor: pointer;   
+.taches div:hover {
+  background-color: rgb(248, 243, 240);
+  display: flex;
+  align-items: center;
 }
-table{
-    margin-left: 5vw;
-    width: 30vw;
-    border: solid rgb(81,191,208);
-    margin-top: 5vh;
-    border-radius: 20px;
+.taches div li:hover {
+  border-left: 5px solid green;
 }
-tr{
-    height: 4vh;
-    font-size: 1.5rem;
-    color: gray;
+.taches {
+  flex: 7;
+  margin-top: 5vh;
+}
+.liste-question {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+.img1 {
+  flex: 1;
+  height: 5vh;
+  background-image: url(../img/ic-liste.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.acc-link {
+  flex: 9;
+  text-decoration: none;
+}
+.creer-admin {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
 
+.img3 {
+  flex: 1;
+  height: 5vh;
+  background-image: url(../img/ic-liste.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
-.listedesjoueurs{
-    font-size: 2.3rem;
-    margin-top: 2Vh;
-    color: rgb(142, 132, 117);
-    font-style: italic;
-}
-.next-prev{
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    margin: auto;
-    width: 30vw;
-    justify-content: space-between;
-}
-.previous{
-    left: 0 ;
-}
-.next{
-    right: 0;
-}
-.acc-butt-prev-next{
-    position: absolute;
-    height: 5vh;
-    width: 7vw;
-    margin-top: 2vh;
-    border-radius: 10px;
-    background-color: rgb(57,221,214);
-    border: none;
-    font-size: 1em;
-    color: white;
-    }
 
-.player-list{
-    width: 40vw;
+.liste-joueurs {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
 }
-#disconnect{
-    cursor: pointer;
+.img2 {
+  flex: 1;
+  height: 5vh;
+  background-image: url(../img/ic-ajout.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
-.remove-lab{
-    display: none;
+.creer-questions {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+.img4 {
+  flex: 1;
+  height: 5vh;
+  background-image: url(../img/ic-ajout.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.contain-view {
+  flex: 7;
+  margin-left: 2%;
+  text-align: center;
+  background-color: white;
+  height: 90%;
+  display: flex;
+  /* margin: 2% 3%; */
+  border-radius: 15px;
+  box-shadow: 0.5px 4.8px 0px -5px rgba(0, 0, 0, 0.026),
+    0.9px 9.7px 0px -5px rgba(0, 0, 0, 0.038),
+    1.4px 15.1px 0.1px -5px rgba(0, 0, 0, 0.047),
+    2px 21.1px 0.1px -5px rgba(0, 0, 0, 0.055),
+    2.7px 27.9px 0.2px -5px rgba(0, 0, 0, 0.063),
+    3.2px 33.4px 0.3px -5px rgba(0, 0, 0, 0.072),
+    3.6px 37.9px 0.5px -5px rgba(0, 0, 0, 0.084),
+    4px 42px 1px -5px rgba(0, 0, 0, 0.11);
+}
+.ins-text {
+  height: 80%;
+}
+
+.img5 {
+  flex: 1;
+  height: 5vh;
+  background-image: url(../img/ic-liste-active.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+table {
+  margin-left: 5vw;
+  width: 30vw;
+  border: solid rgb(81, 191, 208);
+  margin-top: 5vh;
+  border-radius: 20px;
+}
+tr {
+  height: 4vh;
+  font-size: 1.5rem;
+  color: gray;
+}
+.listedesjoueurs {
+  font-size: 2.3rem;
+  margin-top: 2vh;
+  color: rgb(142, 132, 117);
+  font-style: italic;
+}
+.next-prev {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 30vw;
+  justify-content: space-between;
+}
+.previous {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+.acc-butt-prev-next {
+  position: absolute;
+  height: 5vh;
+  width: 7vw;
+  margin-top: 2vh;
+  border-radius: 10px;
+  background-color: rgb(57, 221, 214);
+  border: none;
+  font-size: 1em;
+  color: white;
+}
+
+.player-list {
+  width: 40vw;
+}
+#disconnect {
+  cursor: pointer;
+}
+.remove-lab {
+  display: none;
 }

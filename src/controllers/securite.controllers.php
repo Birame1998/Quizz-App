@@ -86,7 +86,7 @@ function register($prenom, $nom, $login, $password, $password2, $role)
         $file_name = $part.$role . $ext;
         $file_route = ROOT . "public" . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $file_name;
     }
-
+                /* CE PROBLÈME EST DU A UNE ACCOLADE NON FERMÉ  */
     //     if (in_array($ext, $extention_autorier)) {
     //         if (move_uploaded_file($file_to_save, $file_route)) {
     //             $chemin = $file_name;
@@ -118,7 +118,7 @@ function register($prenom, $nom, $login, $password, $password2, $role)
             'prenom' => htmlspecialchars($prenom),
             'nom' => htmlspecialchars($nom),
             'login' => htmlspecialchars($login),
-            'password' => htmlspecialchars($password_hashed),
+            'password' => htmlspecialchars($password),
             'role' => $role,
             'score' => 0,
             'avatar' => $chemin
@@ -140,9 +140,4 @@ function register($prenom, $nom, $login, $password, $password2, $role)
         }
         exit();
     }
-
-    echo "<pre>";
-    var_dump($_POST);
-    echo "<pre>";
-    die;
 }

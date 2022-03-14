@@ -35,7 +35,7 @@
 }
 .cr-head-blanc-space textarea {
   background-color: rgb(247, 247, 247);
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   min-width: 100%;
   min-height: 100%;
   max-height: 100%;
@@ -46,6 +46,7 @@
 }
 #cr-question-form input {
   background-color: rgb(247, 247, 247);
+  font-size: 1.6rem;
 }
 #cr-question-form select {
   box-shadow: 1px 1px rgb(57, 221, 214);
@@ -53,8 +54,8 @@
   width: 20vw;
   height: 5vh;
   margin-left: 3%;
-
   min-height: 30px;
+  font-size: 1.6rem;
 }
 .cr-contain-form {
   display: flex;
@@ -77,9 +78,9 @@
   background-color: rgb(247, 247, 247);
   width: 5vw;
   text-align: center;
-  font-size: 1.3rem;
   height: 4vh;
   margin-left: 1%;
+  
 }
 .error-number{
   color: red;
@@ -155,12 +156,16 @@ img[alt="img-delete"] {
   display: grid;
   height: 55%;
   grid-template-rows: repeat(auto-fill, 10vh);
+  overflow-y: scroll;
 }
 .cr-contain-btn {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   height: fit-content;
+}
+.cr-expique-consigne{
+  margin-left: 3%;
 }
 .cr-contain-btn button {
   height: 4.5vh;
@@ -170,4 +175,5 @@ img[alt="img-delete"] {
   border-radius: 5px;
   color: #fff;
   font-size: 1.3rem;
+  margin-right: 2%;
 }
