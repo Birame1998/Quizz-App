@@ -90,7 +90,7 @@
         <small class="error"><?= $errors['avatar'] ?> </small>
     <?php endif ?>
     <label for="avatar-ins" class="lab-avatar-ins">
-        <div><span>Cliquez ici pour choisir une image</span></div>
+        <div draggable="true"><span>Cliquez ici pour choisir une image</span></div>
     </label>
     <!-- <img  class="ins-avatar-profile" src="<?= WEB_ROOT . "uploads" . DIRECTORY_SEPARATOR . "1.jpg" ?>" alt="photo de profil"> -->
 </div>

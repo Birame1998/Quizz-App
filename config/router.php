@@ -9,7 +9,7 @@ if (isset($_REQUEST['controller'])) {
             require_once(PATH_SRC."controllers".DIRECTORY_SEPARATOR."securite.controllers.php");  
             break;
             case 'question':
-                require_once(PATH_SRC."controllers".DIRECTORY_SEPARATOR."question.controller.php");  
+                require_once(PATH_SRC."controllers".DIRECTORY_SEPARATOR."question.controllers.php");  
                 break;    
         default:
         require_once(PATH_SRC."controllers".DIRECTORY_SEPARATOR."errors.controllers.php");  
