@@ -11,7 +11,7 @@
                     <label for="question">Question</label>
                 </div>
                 <div class="cr-head-blanc-space">
-                    <textarea placeholder="intetulé de la question" name="intetule_question" id="question" autofocus>default question</textarea>
+                    <textarea placeholder="intetulé de la question" name="intetule_question" id="question" autofocus></textarea>
                     <span class="error-crq"></span>
                 </div>
             </div>
@@ -32,18 +32,9 @@
                         <option value="multiple">Multiple</option>
                     </select>
                     <button class="cr-add-answerbtn" type="button"></button>
-                    <small class="cr-expique-consigne">veillez faire ton choix de questin </small>
+                    <small class="cr-expique-consigne"></small>
                 </div>
-                <div class="answer_contain">
-                    <!-- le contenu du formulaire crée en JS -->
-                    <!-- <div class="cr-form-controller">
-                        <input type="text" id="cr-txt">
-                         <label for="">Réponse 1</label>
-                        <input type="checkbox" name="" id="cr-check">
-                        <input type="radio" name="" id="cr-rad">
-                        <button class="cr-delete-answerbtn" type="button"></button>
-                        </div>   -->
-                </div>
+                <div class="answer_contain"> </div>
                 <div class="cr-contain-btn">
                     <button>Enregistrer</button>
                 </div>

@@ -86,16 +86,6 @@ function register($prenom, $nom, $login, $password, $password2, $role)
         $file_name = $part.$role . $ext;
         $file_route = ROOT . "public" . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $file_name;
     }
-<<<<<<< HEAD
-
-        if (in_array($ext, $extention_autorier)) {
-            if (move_uploaded_file($file_to_save, $file_route)) {
-                $chemin = $file_name;
-            }
-        } else {
-            $errors['avatar'] = "choisseez une photo au bon format";
-        }
-=======
                 /* CE PROBLÈME EST DU A UNE ACCOLADE NON FERMÉ  */
     //     if (in_array($ext, $extention_autorier)) {
     //         if (move_uploaded_file($file_to_save, $file_route)) {
@@ -104,7 +94,6 @@ function register($prenom, $nom, $login, $password, $password2, $role)
     //     } else {
     //         $errors['avatar'] = "choisseez une photo au bon format";
     //     }
->>>>>>> 1fb6f3691b098d8c2d099089614f7b2c62c4b5fa
     // }
     // die("after testing");
     /** traitement de sans l'avatar */

@@ -177,3 +177,13 @@ img[alt="img-delete"] {
   font-size: 1.3rem;
   margin-right: 2%;
 }
+.cr-expique-consigne{
+  color: red;
+  font-size: 1.2rem;
+  font-style: oblique;
+}
+.erreur-reponse{
+  font-size: 1.5rem;
+  font-style: oblique;
+  color: red;
+}
