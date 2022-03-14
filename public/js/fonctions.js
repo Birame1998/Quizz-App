@@ -3,7 +3,6 @@ function ChampObligatoir(input) {
   }
   function showError(input, small, message) {
     const formC = input.parentElement;
-    // formC.className = "form-control"+e;
     small.innerText = message;
   }
   function containNumber(p) {

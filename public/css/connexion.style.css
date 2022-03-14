@@ -14,7 +14,7 @@ body{
 }
 .header{
     height: 10vh;
-    color: white;
+    color: var(--white-color);
     display: flex;
     justify-content: flex-start;
     background-color: rgb(5,36,38);
@@ -44,8 +44,8 @@ h1{
 }
 .header-form{
     height: 12vh;
-    color: white;
-    background-color: rgb(81,191,208);
+    color: var(--white-color);
+    background-color: var(--color-accueil);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,7 +55,7 @@ h1{
     width: 15px;
     border: solid 1px;
     margin-right: 2vw;
-    background-color: white;
+    background-color: var(--white-color);
     clip-path: polygon(
         20% 0%,
         0% 20%,
@@ -78,7 +78,7 @@ h2{
 }
 form{
     height: 60vh;
-    background-color: white;
+    background-color: var(--white-color);
 
 }
 .conn-login{
@@ -128,7 +128,7 @@ input[type="submit"]{
 input[id="connexion"]{
 width: 8vw;
 color: white;
-background-color: rgb(81,191,208);
+background-color: var(--globale-color);
 }
 #inscription{
     background-color: white;
@@ -138,8 +138,8 @@ background-color: rgb(81,191,208);
     text-decoration: none;
 }
 #inscription:hover{
-    background-color: rgb(81,191,208);
-    color: white;
+    background-color: var(--globale-color);
+    color: var(--white-color);
 }
 p{
     font-size: 1.3rem;

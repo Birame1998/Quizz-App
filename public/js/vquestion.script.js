@@ -6,6 +6,11 @@ const spanNumbers = document.querySelector(".error-number");
 const spanQuestion = document.querySelector(".error-crq");
 const questionArea = document.querySelector("#question");
 
+
+// ************************************************************************************************** //
+const list_form = document.querySelector("#list-form");
+const list_nombre_question = document.querySelector("#list-nombre_question");
+const spanOK=document.querySelector('#ok');
 // ************************************************************************************************** //
 
 form_crq.addEventListener("submit", function (q) {
@@ -20,8 +25,7 @@ form_crq.addEventListener("submit", function (q) {
     } else {
       if (nbre < 1) {
         q.preventDefault();
-        spanNumbers.innerText =
-          "Veuillez inscrire un entier superieur ou egal a 1";
+        spanNumbers.innerText = "Veuillez inscrire un entier superieur ou egal a 1";
       }
     }
     if (ChampObligatoir(questionArea)) {
@@ -41,5 +45,12 @@ moins_ndp.addEventListener("click", function () {
     if (nbre_de_points.value >= 2) {
       nbre_de_points.value--;
     }
+  }
+});
+
+list_form.addEventListener('click', function(e){
+  if (ChampObligatoir(list_nombre_question)) {
+    e.preventDefault();
+    spanOK.innerText = "Veuillez choisir le nombre de questions a afficher";
   }
 });

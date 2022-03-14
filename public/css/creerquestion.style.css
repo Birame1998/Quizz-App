@@ -2,14 +2,13 @@
   border: 1px solid black;
   width: 100%;
 }
-.cr-header {
-  color: rgb(57, 221, 214);
-}
+
 .cr-header h1 {
   margin-left: 0;
+  color: var(--globale-color);
 }
 .cr-contain-question {
-  border: 1px solid rgb(57, 221, 214);
+  border: 1px solid var(--globale-color);
   border-radius: 20px;
   height: 85%;
   margin: 2%;
@@ -31,7 +30,7 @@
   flex: 6;
   width: 30vw;
   height: 10vh;
-  box-shadow: 1px 1px rgb(57, 221, 214);
+  box-shadow: 1px 1px var(--globale-color);
 }
 .cr-head-blanc-space textarea {
   background-color: rgb(247, 247, 247);
@@ -49,7 +48,7 @@
   font-size: 1.6rem;
 }
 #cr-question-form select {
-  box-shadow: 1px 1px rgb(57, 221, 214);
+  box-shadow: 1px 1px var(--globale-color);
   background-color: rgb(247, 247, 247);
   width: 20vw;
   height: 5vh;
@@ -63,7 +62,6 @@
   margin-left: 4%;
   flex-direction: column;
   justify-content: start;
-  /* border: 1px solid black; */
   height: 85%;
 }
 .error-crq{
@@ -94,7 +92,7 @@
 .ajout-retrait{
 height: 80%;
 width: 3%;
-background-color: rgb(57, 221, 214);
+background-color: var(--globale-color);
 color: white;
 font-size: 1.5rem;
 border: none;
@@ -125,11 +123,7 @@ input[id="cr-rad"] {
   margin-top: 2%;
   align-items: center;
 }
-/* img[alt="ajout-reponse"]{
-  height:100%;
-  width: 100%;
-  cursor: pointer;
-} */
+
 img[alt="img-delete"] {
   cursor: pointer;
 }
@@ -170,10 +164,13 @@ img[alt="img-delete"] {
 .cr-contain-btn button {
   height: 4.5vh;
   width: 10vw;
-  background-color: rgb(57, 221, 214);
+  background-color: var(--globale-color);
   border: none;
   border-radius: 5px;
   color: #fff;
   font-size: 1.3rem;
   margin-right: 2%;
+}
+.cr-success{
+  color: green;
 }

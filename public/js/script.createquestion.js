@@ -1,7 +1,7 @@
 const add_answer = document.querySelector(".cr-add-answerbtn");
 const answer_contain = document.querySelector(".answer_contain");
 const selectValue = document.getElementById("type-question");
-let i=1;
+let i = 1;
 //**********************************************************************//
 add_answer.addEventListener("click", function () {
   var cr_form_controller = document.createElement("div");
@@ -23,7 +23,7 @@ add_answer.addEventListener("click", function () {
       cr_form_controller.appendChild(btn_delete_reponse);
       answer_contain.appendChild(cr_form_controller);
       add_answer.disabled = true;
-      
+
       break;
     case "simple":
       add_answer.disabled = false;
@@ -47,9 +47,15 @@ add_answer.addEventListener("click", function () {
       btn_delete_reponse.className = "cr-delete-answerbtn";
       cr_form_controller.appendChild(btn_delete_reponse);
       answer_contain.appendChild(cr_form_controller);
+
       btn_delete_reponse.addEventListener("click", function () {
         btn_delete_reponse.parentNode.remove();
       });
+      //recupérer les values de radio
+      input_text_reponse.addEventListener("input", function () {
+        input_radio_reponse.value = input_text_reponse.value;
+      });
+
       break;
     case "multiple":
       var lab_reponse = document.createElement("label");
@@ -75,6 +81,11 @@ add_answer.addEventListener("click", function () {
       btn_delete_reponse.addEventListener("click", function () {
         btn_delete_reponse.parentNode.remove();
       });
+      //recupérer les values de type checkboxe
+      input_text_reponse.addEventListener("input", function () {
+        input_check_reponse.value = input_text_reponse.value;
+      });
+
       break;
   }
   selectValue.addEventListener("change", function () {
@@ -85,10 +96,9 @@ add_answer.addEventListener("click", function () {
 });
 
 /* array1.forEach(element => console.log(element)); */
-function rebuid(){
-  const reponse=document.querySelector('label');
-  reponse.forEach((input, i)=>
-  {
-    input.value=i+1;
-  })
+function rebuild() {
+  const reponse = document.querySelector("label"); //nom de tous labels en communs
+  reponse.forEach((input, i) => {
+    input.value = i + 1;
+  });
 }

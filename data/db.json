@@ -592,14 +592,93 @@
   ],
   "questions": [
     {
-      "intetule_question": "Qui est l'actuel president du senegal ?",
-      "nombre_points": "10",
-      "reponse_type_text": "maky sall"
+      "intetule_question": "QUI EST LE PRESIDENT DE LA REPUBLIQUE ?",
+      "nombre_points": "5",
+      "reponses": ["maky sall", "WADE", "Senghor"],
+      "correct": ["maky sall"]
     },
     {
-      "intetule_question": "quelle est la capitale du senegal ?",
+      "intetule_question": "qui est le plus con de la salle ?",
       "nombre_points": "10",
-      "reponse_type_text": "Dakar"
+      "reponses": ["Biram", "Bojan", "DER", "mbiye so", "biram"],
+      "correct": ["Biram", "Bojan", "mbiye so"]
+    },
+    {
+      "intetule_question": "qui est l'actuel president ?",
+      "nombre_points": "51",
+      "reponses": ["maky sall"],
+      "correct": ["maky sall"]
+    },    {
+      "intetule_question": "QUI EST LE PRESIDENT DE LA REPUBLIQUE ?",
+      "nombre_points": "5",
+      "reponses": ["maky sall", "WADE", "Senghor"],
+      "correct": ["maky sall"]
+    },
+    {
+      "intetule_question": "qui est le plus con de la salle ?",
+      "nombre_points": "10",
+      "reponses": ["Biram", "Bojan", "DER", "mbiye so", "biram"],
+      "correct": ["Biram", "Bojan", "mbiye so"]
+    },
+    {
+      "intetule_question": "qui est l'actuel president ?",
+      "nombre_points": "51",
+      "reponses": ["maky sall"],
+      "correct": ["maky sall"]
+    },
+    {
+      "intetule_question": "QUI EST LE PRESIDENT DE LA REPUBLIQUE ?",
+      "nombre_points": "5",
+      "reponses": ["maky sall", "WADE", "Senghor"],
+      "correct": ["maky sall"]
+    },
+    {
+      "intetule_question": "qui est le plus con de la salle ?",
+      "nombre_points": "10",
+      "reponses": ["Biram", "Bojan", "DER", "mbiye so", "biram"],
+      "correct": ["Biram", "Bojan", "mbiye so"]
+    },
+    {
+      "intetule_question": "qui est l'actuel president ?",
+      "nombre_points": "51",
+      "reponses": ["maky sall"],
+      "correct": ["maky sall"]
+    },
+    {
+      "intetule_question": "QUI EST LE PRESIDENT DE LA REPUBLIQUE ?",
+      "nombre_points": "5",
+      "reponses": ["maky sall", "WADE", "Senghor"],
+      "correct": ["maky sall"]
+    },
+    {
+      "intetule_question": "qui est le plus con de la salle ?",
+      "nombre_points": "10",
+      "reponses": ["Biram", "Bojan", "DER", "mbiye so", "biram"],
+      "correct": ["Biram", "Bojan", "mbiye so"]
+    },
+    {
+      "intetule_question": "qui est l'actuel president ?",
+      "nombre_points": "51",
+      "reponses": ["maky sall"],
+      "correct": ["maky sall"]
+    },
+    {
+      "intetule_question": "QUI EST LE PRESIDENT DE LA REPUBLIQUE ?",
+      "nombre_points": "5",
+      "reponses": ["maky sall", "WADE", "Senghor"],
+      "correct": ["maky sall"]
+    },
+    {
+      "intetule_question": "qui est le plus con de la salle ?",
+      "nombre_points": "10",
+      "reponses": ["Biram", "Bojan", "DER", "mbiye so", "biram"],
+      "correct": ["Biram", "Bojan", "mbiye so"]
+    },
+    {
+      "intetule_question": "qui est l'actuel president ?",
+      "nombre_points": "51",
+      "reponses": ["maky sall"],
+      "correct": ["maky sall"]
     }
   ]
 }

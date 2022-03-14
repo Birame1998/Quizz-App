@@ -14,7 +14,7 @@
             </div>
             <div class="taches">
                 <div class="liste-question m-on-click">
-                    <a href="<?=WEB_ROOT.'?controller=user&action=liste.question'?>" class="acc-link"><li class="m-link">Liste Questions</li></a>
+                    <a href="<?=WEB_ROOT.'?controller=question&action=liste.question'?>" class="acc-link"><li class="m-link">Liste Questions</li></a>
                     <div class="img1"></div>
                 </div>
                 <div class="creer-admin m-on-click">
@@ -26,7 +26,7 @@
                     <div class="img3"></div>
                 </div>
                 <div class="creer-questions  m-on-click">
-                <a href="<?=WEB_ROOT."?controller=user&action=creerquestion"?>" class="acc-link"><li class="m-link">Creer une question</li></a>
+                <a href="<?=WEB_ROOT."?controller=question&action=creerquestion"?>" class="acc-link"><li class="m-link">Creer une question</li></a>
                     <div class="img4"></div>
                 </div>        
             </div>

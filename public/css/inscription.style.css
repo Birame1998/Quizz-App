@@ -11,7 +11,7 @@ button{
 }
 .header{
     height: 10vh;
-    color: white;
+    color: var(--globale-color);
     display: flex;
     justify-content: flex-start;
     background-color: rgb(5,36,38);
@@ -39,7 +39,7 @@ button{
     margin-right: auto;
     height: 98%;
     border-radius: 20px;
-    background-color: white;
+    background-color: var(--white-color);
     display: flex;
 }
 .ins-text{
@@ -97,8 +97,8 @@ input[id="avatar"]{
 }
 #creer-compte-ins{
     margin-left: 8vw;
-    background-color: rgb(91,191,208);
-    border-color: rgb(91,191,208);
+    background-color: var(--globale-color);
+    border-color: var(--globale-color);
     color: white;
     margin-top: 1.5vh;
     height: 4vh;
@@ -160,7 +160,7 @@ img[alt="img"]{
  height:50%;
  margin-top: 5vh; 
  border-radius: 50%;  
- border: 8px solid  rgb(91,191,208);
+ border: 8px solid  var(--globale-color);
 }
 
 #avatar-ins{
@@ -168,9 +168,9 @@ img[alt="img"]{
 }
 #choose-file{
     border: solid 1px;
-    background-color: rgb(91,191,208);
+    background-color: var(--globale-color);
     border-radius: 5px;
-    color: white;
+    color: var(--white-color);
     cursor: pointer;
 }
 .choose-file{
@@ -184,8 +184,8 @@ img[alt="img"]{
 .back-to-connection{
     text-decoration: none;
     font-size: 1.2rem;
-    background-color: rgb(91,191,208);
-    color: white;
+    background-color: var(--globale-color);
+    color: var(--white-color);
     width: fit-content;
     margin-top: 5vh;
 }

@@ -19,10 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             lister_joueur();
         } elseif ($_GET['action'] == "inscription") {
             creer_admin();
-        } elseif ($_GET['action'] == "creerquestion") {
-            creer_question();
-        } elseif($_GET['action']=="liste.question"){
-            lister_question();
         }
     }
 }
@@ -65,17 +61,4 @@ function creer_admin()
     $content_for_admin_sign_in = ob_get_clean();
     require_once(PATH_VIEWS . "user" . DIRECTORY_SEPARATOR . "accueil.html.php");
 }
-function creer_question()
-{
-    ob_start();
-    require_once(PATH_VIEWS . "question" . DIRECTORY_SEPARATOR ."creer-question.html.php");
-    $content_for_question = ob_get_clean();
-    require_once(PATH_VIEWS . "user" . DIRECTORY_SEPARATOR . "accueil.html.php");
-}
-function lister_question()
-{
-    ob_start();
-    require_once(PATH_VIEWS . "question" . DIRECTORY_SEPARATOR ."liste.question.html.php");
-    $content_for_lister_queston = ob_get_clean();
-    require_once(PATH_VIEWS . "user" . DIRECTORY_SEPARATOR . "accueil.html.php");
-}
+

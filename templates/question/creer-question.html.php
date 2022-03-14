@@ -1,6 +1,15 @@
+<?php
+if (isset($_SESSION['success-question'])) {
+    $susses=$_SESSION['success-question'];
+    unset($_SESSION['success-question']);
+}
+?>
 <div class="cr-contain-create">
     <div class="cr-header">
         <h1>PARAMETRER VOTRE QUESTION</h1>
+        <?php if(isset($susses)):?>
+        <h3 class="cr-success"><?= $susses ?></h3>
+        <?php endif ?>
     </div>
     <div class="cr-contain-question">
         <form id="cr-question-form" action="<?= WEB_ROOT ?>" method="post">
@@ -11,7 +20,7 @@
                     <label for="question">Question</label>
                 </div>
                 <div class="cr-head-blanc-space">
-                    <textarea placeholder="intetulé de la question" name="intetule_question" id="question" autofocus>default question</textarea>
+                    <textarea placeholder="intetulé de la question" name="intetule_question" id="question" autofocus></textarea>
                     <span class="error-crq"></span>
                 </div>
             </div>

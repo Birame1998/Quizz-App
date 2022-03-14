@@ -1,0 +1,6 @@
+/* declaration des variables couleurs */
+:root{
+    --globale-color: rgb(57, 221, 214);
+    --white-color: #fff;
+    --color-accueil: rgb(81, 191, 208);
+}
