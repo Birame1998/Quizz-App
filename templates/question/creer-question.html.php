@@ -34,25 +34,13 @@
                         <button class="cr-add-answerbtn" type="button"></button>    
                 </div>
                 <div class="answer_contain">
-                     <!-- <div class="cr-form-controller"> 
-                    <label for="cr-point">Nombre de point</label>
-                    <input type="number" name="nombre_point" id="cr-point" min="1">
-                </div>
-                <div class="cr-form-controller">
-                    <label for="">Type de réponse</label>
-                    
-                    <button class="cr-add-answerbtn" type="button"></button>
-                </div>
-                <div class="answer_contain">
-                    <!-- le contenu du formulaire crée en JS -->
-
-                    <!-- <div class="cr-form-controller">
+                        <!-- <div class="cr-form-controller">
                          <label for="">Réponse 1</label>
                         <input type="text" id="cr-txt">
                         <input type="checkbox" name="" id="cr-check">
                         <input type="radio" name="" id="cr-rad">
                         <button class="cr-delete-answerbtn" type="button"></button>
-                    </div>  -->
+                        </div>   -->
                 </div>
                 <div class="cr-contain-btn">
                     <button>Enregistrer</button>

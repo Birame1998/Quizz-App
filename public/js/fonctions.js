@@ -63,19 +63,37 @@ function validPassword(input){
 function activeBtn() {
   add_answer.disabled = false;
 }
-function creerQuestion() {
-  switch (selectValue.value) {
-    case "simple":
-      createInputTypeText();
-      createRadio();
-      break;
-    case "text":
-      createInputTypeText();
-      add_answer.disabled = true;
-      break;
-    case "multiple":
-      createInputTypeText();
-      createCheckbox();
-      break;
-  }
+function supp_answer() {
+ 
+}
+function create_labe(lab,i) {
+  let i=1
+  var lab=document.createElement('label');
+  lab.innerText='Reponse '+i;
+  cr_form_controller.appendChild(lab_reponse);
+  i++ 
+}
+function create_inputText() {
+  input_text_reponse=document.createElement('input');
+  input_text_reponse.type='text';
+  input_text_reponse.id='cr-txt';
+  cr_form_controller.appendChild(input_text_reponse);
+}
+function create_inputRadio() {
+  var input_radio_reponse=document.createElement('input');
+  input_radio_reponse.type='radio';
+  input_radio_reponse.id='cr-rad';
+  cr_form_controller.appendChild(input_radio_reponse);
+}
+function create_inputCheck() {
+   var input_check_reponse=document.createElement('input');
+   input_check_reponse.type='checkbox';
+   input_check_reponse.id='cr-check';
+   cr_form_controller.appendChild(input_check_reponse);
+}
+function create_btnDelete() {
+  var btn_delete_reponse=document.createElement('button');  
+  btn_delete_reponse.type='button';
+  cr_form_controller.appendChild(btn_delete_reponse);
+
 }

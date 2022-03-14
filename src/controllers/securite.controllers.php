@@ -87,13 +87,13 @@ function register($prenom, $nom, $login, $password, $password2, $role)
         $file_route = ROOT . "public" . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $file_name;
     }
 
-    //     if (in_array($ext, $extention_autorier)) {
-    //         if (move_uploaded_file($file_to_save, $file_route)) {
-    //             $chemin = $file_name;
-    //         }
-    //     } else {
-    //         $errors['avatar'] = "choisseez une photo au bon format";
-    //     }
+        if (in_array($ext, $extention_autorier)) {
+            if (move_uploaded_file($file_to_save, $file_route)) {
+                $chemin = $file_name;
+            }
+        } else {
+            $errors['avatar'] = "choisseez une photo au bon format";
+        }
     // }
     // die("after testing");
     /** traitement de sans l'avatar */
