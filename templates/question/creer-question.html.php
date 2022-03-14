@@ -41,18 +41,9 @@ if (isset($_SESSION['success-question'])) {
                         <option value="multiple">Multiple</option>
                     </select>
                     <button class="cr-add-answerbtn" type="button"></button>
-                    <small class="cr-expique-consigne">veillez faire ton choix de questin </small>
+                    <small class="cr-expique-consigne"></small>
                 </div>
-                <div class="answer_contain">
-                    <!-- le contenu du formulaire crée en JS -->
-                    <!-- <div class="cr-form-controller">
-                        <input type="text" id="cr-txt">
-                         <label for="">Réponse 1</label>
-                        <input type="checkbox" name="" id="cr-check">
-                        <input type="radio" name="" id="cr-rad">
-                        <button class="cr-delete-answerbtn" type="button"></button>
-                    </div>  -->
-                </div>
+                <div class="answer_contain"> </div>
                 <div class="cr-contain-btn">
                     <button>Enregistrer</button>
                 </div>

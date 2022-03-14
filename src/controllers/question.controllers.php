@@ -4,6 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['action'])) {
 
         if ($_POST['action'] == "question") {
+<<<<<<< HEAD
             // echo "la requete venant du formulaire de question"; die;
             extract($_POST);
             switch ($selecteur) {
@@ -17,6 +18,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     enregistrer_question_text($intetule_question, $nombre_points, $reponse_type_text);
                     break;
             }
+=======
+            // echo "la requete venant du formulaire de question";
+            // extract($_POST);
+            // enregistrer_question_type_multiple($checkbox_);
+            
+            // $intetule_question=$_POST['intetule_question'];
+            // $nombre_points=$_POST['nombre_points'];
+            // $selecteur=$_POST['selecteur'];
+            // $question_type_text=$_POST['question_type_text'];
+            // $question_type_radio=$_POST['question_type_radio'];
+            // $input_multiple_text = $_POST['input_multiple_text'];
+            //
+            // enregistrer_question_simple($question_type_radio_, $text_question_simple_);
+            /* L'APPEL DE CHAQUE QUESTION VA SE FAIRE SELON LES VALEURS DU SELECT    */
+            // switch ($selecteur) {
+            //     case $multiple:
+            //         // enregistrer_question_type_multiple();
+            //         break;
+            //     case $simple:
+            //         // enregistrer_question_simple();
+            //         break;
+            //     case $text:
+            // // enregistrer_question_text($intetule_question, $nombre_points, $reponse_type_text);
+            //         break;
+            // }
+>>>>>>> f0fff01fab866c221f2dc6c0abac92b21b6e8284
         }
     }
 }

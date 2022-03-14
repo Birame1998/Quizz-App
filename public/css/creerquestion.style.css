@@ -171,6 +171,18 @@ img[alt="img-delete"] {
   font-size: 1.3rem;
   margin-right: 2%;
 }
+<<<<<<< HEAD
 .cr-success{
   color: green;
+=======
+.cr-expique-consigne{
+  color: red;
+  font-size: 1.2rem;
+  font-style: oblique;
+}
+.erreur-reponse{
+  font-size: 1.5rem;
+  font-style: oblique;
+  color: red;
+>>>>>>> f0fff01fab866c221f2dc6c0abac92b21b6e8284
 }
